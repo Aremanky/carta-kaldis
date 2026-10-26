@@ -1,0 +1,112 @@
+/* Pantallas: ajustes para tablet (≥700 px), ficha en dos columnas (≥900 px) y ordenador (≥1100 px) */
+@media (hover:hover){
+  .dish:hover .art,.card:hover .art,.tile:hover .art,.sres:hover .art{transform:rotate(-7deg) scale(1.03)}
+  .pill:hover{color:var(--ink)}
+  .card,.tile{transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+  .card:hover,.tile:hover{transform:translateY(-3px);box-shadow:0 16px 32px -20px var(--shadow)}
+}
+
+/* ---------- Tablet ---------- */
+@media (min-width:700px){
+  :root{--gl:max(28px, env(safe-area-inset-left, 0px));--gr:max(28px, env(safe-area-inset-right, 0px))}
+  .hero{padding-block:20px 38px}
+  /* cada local: disco a la izquierda, nombre y lema a la derecha */
+  .duo{grid-template-rows:auto auto;row-gap:8px;margin-top:24px}
+  .shop{grid-template-columns:auto minmax(0,1fr);column-gap:18px;row-gap:8px;justify-items:start;text-align:left;padding:0 28px 0 0}
+  .shop + .shop{padding:0 0 0 28px}
+  .shop .logo{grid-column:1;grid-row:1/-1;align-self:center;width:84px;height:84px}
+  .shop .mark{grid-column:2;grid-row:1;justify-items:start;align-self:end}
+  .shop .script{grid-column:2;grid-row:2;align-self:start;font-size:27px}
+  .hero-foot{display:flex;align-items:flex-end;gap:28px}
+  .cta{margin:24px 0 0 auto;justify-content:flex-end}
+  .cta .btn{flex:none}
+  .sec{padding-block:52px 8px}
+  .sec-title{font-size:38px}
+  .sec.pizarra .sec-title{font-size:58px}
+  .list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:44px;align-items:start}
+  .list > .grp{grid-column:1/-1}
+  .dish{grid-template-columns:92px minmax(0,1fr);border-top:0;border-bottom:1px solid var(--line);align-self:stretch}
+  .dish .art{width:92px}
+  .list.compact .dish{grid-template-columns:56px minmax(0,1fr)}
+  .list.compact .art{width:56px}
+  .carousel{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;overflow:visible;scroll-snap-type:none;padding-bottom:4px}
+  .card{flex:none}
+  .grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+  .foot{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:48px;align-items:start}
+  /* las hojas pasan a ser diálogos centrados */
+  .sheet{align-items:center;padding:24px}
+  .panel{max-width:600px;border-radius:26px;max-height:min(88vh,920px);transform:translateY(20px) scale(.97);opacity:0;transition:transform .45s var(--ease),opacity .25s ease}
+  .sheet.open .panel{transform:none;opacity:1}
+  .grab{display:none}
+  .sbody{padding-top:26px}
+  .sheet.full{align-items:flex-start;padding-top:8vh}
+  .sheet.full .panel{height:auto;max-height:82vh;max-width:660px;border-radius:26px}
+  .sbar{padding-block:14px}
+  .toast{bottom:28px}
+}
+
+/* ---------- Ficha en dos columnas ---------- */
+@media (min-width:900px){
+  #sh-dish .panel{max-width:900px}
+  #dishBody{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);column-gap:40px;align-items:start;padding-block:36px 32px;padding-inline:36px}
+  .d-media{position:sticky;top:0;display:grid;place-items:center;padding:18px;border-radius:22px;background:var(--surface-2)}
+  .d-art{width:100%;max-width:360px;margin:0}
+  .d-info .d-tags:first-child,.d-info .d-head:first-child{margin-top:0}
+}
+
+/* ---------- Ordenador: rótulo a todo lo ancho y secciones en una columna lateral ---------- */
+@media (min-width:1100px){
+  :root{--gl:0px;--gr:0px}
+  .hero{padding:22px 40px 44px}
+  .hero-in{max-width:1280px}
+  .duo{margin-top:20px;row-gap:10px}
+  .shop{column-gap:26px;row-gap:10px;padding-right:48px}
+  .shop + .shop{padding-left:48px;padding-right:0}
+  .shop .logo{width:116px;height:116px}
+  .shop .script{font-size:33px}
+  .layout{display:grid;grid-template-columns:224px minmax(0,1fr);column-gap:56px;max-width:1280px;margin:0 auto;padding:0 40px;align-items:start}
+  .nav{position:sticky;top:0;flex-direction:column;align-items:stretch;gap:18px;padding:40px 0 32px;background:none;-webkit-backdrop-filter:none;backdrop-filter:none;border:0;max-height:100vh;overflow-y:auto;scrollbar-width:thin}
+  .nav.stuck{border:0}
+  .nav-tools{order:-1;flex-direction:column;gap:8px}
+  .nav-tools .ibtn{width:100%;height:46px;border-radius:14px;display:flex;justify-content:flex-start;gap:10px;padding:0 14px}
+  .nav-tools .nt-l{display:inline;font:600 13px/1 var(--font-display);letter-spacing:.14em;text-transform:uppercase}
+  .nav-tools .badge{top:50%;right:12px;transform:translateY(-50%)}
+  .pills{flex-direction:column;overflow:visible;padding:0;gap:2px;-webkit-mask-image:none;mask-image:none}
+  .pill{height:42px;line-height:42px;border-radius:12px;text-align:left;padding:0 14px;font-size:12.5px;white-space:normal}
+  .pill.on{background:var(--ink);color:var(--bg)}
+  .pill-ind{display:none}
+  .sec{padding-block:52px 8px;scroll-margin-top:24px}
+  .sec.pizarra{--gl:36px;--gr:36px;margin-top:44px;padding-block:36px 34px;border-radius:30px}
+  .list{column-gap:56px}
+  .list.compact{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:36px}
+  .carousel{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .foot{margin-top:56px;padding-block:40px 56px}
+}
+@media (min-width:1500px){
+  .carousel{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .list.compact{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media (hover:hover){.langs button:hover .flag{opacity:.95;filter:none}}
+
+/* ---------- Móviles estrechos: los dos botones del rótulo en una fila ---------- */
+@media (max-width:380px){
+  .cta{gap:8px}
+  .cta .btn{padding:0 12px;gap:6px;font-size:14px}
+}
+
+/* ---------- Pie en una columna (sin horario, dirección ni wifi) ---------- */
+@media (min-width:700px){
+  .foot.one{grid-template-columns:minmax(0,1fr)}
+  .foot.one .legend-grid{grid-template-columns:repeat(auto-fill,minmax(190px,1fr))}
+}
+@media (min-width:700px){
+  .breads{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;max-width:900px;margin-top:18px;padding:18px 22px 20px}
+  .breads-h,.bnote{grid-column:1/-1}
+  .breads-h{font-size:32px;margin-bottom:14px}
+  .breads-h .i{width:28px;height:28px}
+  .bgrp{padding-right:22px}
+  .bgrp + .bgrp{margin-top:0;padding:0 0 0 22px;border-left:1px dashed var(--line-2)}
+  .breads .bdeco{right:-10px;top:-24px;width:150px;height:150px}
+}
+@media (hover:hover){.dish:hover .art:has(> img),.card:hover .art:has(> img),.tile:hover .art:has(> img),.sres:hover .art:has(> img){transform:scale(1.04)}}
+@media (min-width:900px){.d-art.photo{width:100%;margin:0}}

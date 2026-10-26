@@ -1,0 +1,21 @@
+/* Alérgenos (Reglamento UE 1169/2011): color del pictograma que usa el local, nombre en cada idioma (es · en · fr) y dibujo 24×24 en blanco. */
+export const ALG = {
+  gluten: { c: '#e1915c', es: 'Gluten', en: 'Gluten', fr: 'Gluten', s: '<path d="M12 21.5V7"/><path d="M12 7c-.9-1.1-.9-2.7 0-4 .9 1.3.9 2.9 0 4z"/><path d="M12 10.5C9.6 10.2 8.4 8.4 8.6 6c2.3.3 3.4 2 3.4 4.5zM12 10.5c2.4-.3 3.6-2.1 3.4-4.5-2.3.3-3.4 2-3.4 4.5zM12 15c-2.4-.3-3.6-2.1-3.4-4.5 2.3.3 3.4 2 3.4 4.5zM12 15c2.4-.3 3.6-2.1 3.4-4.5-2.3.3-3.4 2-3.4 4.5zM12 19.5c-2.4-.3-3.6-2.1-3.4-4.5 2.3.3 3.4 2 3.4 4.5zM12 19.5c2.4-.3 3.6-2.1 3.4-4.5-2.3.3-3.4 2-3.4 4.5z"/>' },
+  crustaceans: { c: '#2da0da', es: 'Crustáceos', en: 'Crustaceans', fr: 'Crustacés', s: '<path d="M15.5 4.5c-4.7 0-8.5 3.8-8.5 8.5 0 3 1.7 5.4 4.3 6.6"/><path d="M15.5 4.5c1.9 0 3.5 1.6 3.5 3.5s-1.6 3.5-3.5 3.5c-2.5 0-4.5 2-4.5 4.5 0 1.4.6 2.6 1.6 3.4"/><path d="M11.3 19.6 8.6 21.6M11.3 19.6l1 2.4"/><path d="M17.6 5.1c1.4-1.3 2.9-1.9 4.4-2"/><path d="M8.9 9.2 7 8M7.8 12.6H5.6M8.4 16l-1.9.9"/>' },
+  eggs: { c: '#f9ab56', es: 'Huevo', en: 'Egg', fr: 'Œufs', s: '<path d="M12 3c3.6 0 6.5 5.4 6.5 10a6.5 6.5 0 0 1-13 0C5.5 8.4 8.4 3 12 3z"/>' },
+  fish: { c: '#3a498e', es: 'Pescado', en: 'Fish', fr: 'Poisson', s: '<path d="M6.5 12c2.2-3.6 5-5.5 8.3-5.5 3 0 5.2 2 6.7 5.5-1.5 3.5-3.7 5.5-6.7 5.5-3.3 0-6.1-1.9-8.3-5.5z"/><path d="M6.5 12 2.5 8.5v7z"/><path d="M17.3 11h.01" stroke-width="2.4"/>' },
+  peanuts: { c: '#bc8d69', es: 'Cacahuetes', en: 'Peanuts', fr: 'Arachides', s: '<path d="M9.6 12C7.2 11 7 4 12 4s4.8 7 2.4 8c2.6 1 2.9 8.5-2.4 8.5S7 13 9.6 12z"/><path d="M10.6 7.5h.01M13.4 9h.01M10.8 16h.01M13.4 17.6h.01" stroke-width="2"/>' },
+  soy: { c: '#2da057', es: 'Soja', en: 'Soy', fr: 'Soja', s: '<path d="M4.5 19.5C4 13 9 5.5 19.5 4.5 20 11 13 19 4.5 19.5z"/><circle cx="9" cy="15" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="15" cy="9" r="1.6"/>' },
+  milk: { c: '#7a553a', es: 'Lácteos', en: 'Milk', fr: 'Lait', s: '<path d="M10 3h4v3l2 3.2V20a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9.2L10 6z"/><path d="M8 13h8"/>' },
+  nuts: { c: '#c16f63', es: 'Frutos de cáscara', en: 'Tree nuts', fr: 'Fruits à coque', s: '<path d="M5.5 10.5c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6z"/><path d="M6.6 10.5c.2 5 2.6 8.8 5.4 10 2.8-1.2 5.2-5 5.4-10"/><path d="M12 4.5V2.5"/>' },
+  celery: { c: '#90c84d', es: 'Apio', en: 'Celery', fr: 'Céleri', s: '<path d="M9 21v-9.5M12 21V9M15 21v-9.5M7.5 21h9"/><path d="M9 11.5C7 10.6 6 8.6 6.4 6.5c2 .4 3.1 2.3 2.6 5zM12 9c-1.6-1.6-1.6-4.2 0-6 1.6 1.8 1.6 4.4 0 6zM15 11.5c2-.9 3-2.9 2.6-5-2 .4-3.1 2.3-2.6 5z"/>' },
+  mustard: { c: '#c1a661', es: 'Mostaza', en: 'Mustard', fr: 'Moutarde', s: '<path d="M9 9.5h6V19a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2z"/><path d="M10.5 9.5v-3L12 3l1.5 3.5v3"/><path d="M9 14h6"/>' },
+  sesame: { c: '#aca18d', es: 'Sésamo', en: 'Sesame', fr: 'Sésame', s: '<path d="M8.5 5.6c1.8 1.7 1.8 5.4 0 6.8-1.8-1.4-1.8-5.1 0-6.8z" transform="rotate(-28 8.5 9)"/><path d="M15.5 5.1c1.8 1.7 1.8 5.4 0 6.8-1.8-1.4-1.8-5.1 0-6.8z" transform="rotate(22 15.5 8.5)"/><path d="M12 12.6c1.8 1.7 1.8 5.4 0 6.8-1.8-1.4-1.8-5.1 0-6.8z" transform="rotate(-4 12 16)"/>' },
+  sulphites: { c: '#83305a', es: 'Sulfitos', en: 'Sulphites', fr: 'Sulfites', s: '<circle cx="12" cy="14" r="3.2"/><circle cx="5.5" cy="7.5" r="2.3"/><circle cx="18.5" cy="7.5" r="2.3"/><path d="M7.3 9.1l2.3 2.6M16.7 9.1l-2.3 2.6M12 17.2v2.3"/>' },
+  lupin: { c: '#f2db6b', es: 'Altramuces', en: 'Lupin', fr: 'Lupin', s: '<circle cx="8.6" cy="9.2" r="3.6"/><circle cx="15.6" cy="10.4" r="3.6"/><circle cx="11.6" cy="16.2" r="3.6"/><path d="M7.4 8.2l1.6 1.4M14.4 9.4l1.6 1.4M10.4 15.2l1.6 1.4"/>' },
+  molluscs: { c: '#68c7dd', es: 'Moluscos', en: 'Molluscs', fr: 'Mollusques', s: '<path d="M12 20 4.2 10C6.2 6.4 8.8 4.5 12 4.5s5.8 1.9 7.8 5.5z"/><path d="M12 20 8.2 5.6M12 20V4.5M12 20l3.8-14.4"/><path d="M10 20h4"/>' }
+};
+export const ALG_ORDER = Object.keys(ALG);
+
+/* Pictograma de color del alérgeno */
+export const icAlg = a => `<svg class="ai" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="12" fill="${ALG[a].c}"/><g fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" transform="translate(4.3 4.3) scale(.64)">${ALG[a].s}</g></svg>`;

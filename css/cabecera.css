@@ -1,0 +1,37 @@
+/* Cabecera: el rótulo gris con los dos locales, banderas y botones */
+
+/* ---------- Rótulo (cabecera) ---------- */
+.hero{position:relative;isolation:isolate;overflow:hidden;color:var(--fascia-ink);background-color:var(--fascia);background-image:linear-gradient(180deg,rgba(255,255,255,.07),transparent 40%),radial-gradient(55% 45% at 16% 0%,rgba(255,232,206,.17),transparent 70%),radial-gradient(55% 45% at 84% 0%,rgba(255,232,206,.13),transparent 70%);padding-left:var(--gl);padding-right:var(--gr);padding-block:14px 30px}
+.hero::after{content:"";position:absolute;inset:auto 0 0;height:7px;background:var(--fascia-2);z-index:-1}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+.top{display:flex;align-items:center;gap:12px}
+.top-actions{margin-left:auto;display:flex;align-items:center;gap:8px}
+.seg{display:inline-flex;padding:3px;border-radius:999px;background:var(--fascia-fill)}
+.seg button{min-width:40px;height:32px;padding:0 10px;border-radius:999px;font:600 13px/1 var(--font-display);letter-spacing:.1em;color:var(--fascia-muted);transition:background-color .2s,color .2s}
+.seg button[aria-pressed="true"]{background:var(--fascia-ink);color:var(--fascia)}
+.hero .ibtn{background:var(--fascia-fill);color:var(--fascia-ink)}
+
+/* Los dos locales, uno junto al otro como en la fachada (en el móvil, cada uno en su columna) */
+.duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto auto auto;row-gap:10px;margin-top:18px}
+.shop{position:relative;grid-row:1/-1;display:grid;grid-template-rows:subgrid;row-gap:10px;justify-items:center;align-content:start;text-align:center;min-width:0;padding:0 10px}
+.shop + .shop::before{content:"";position:absolute;left:0;top:0;bottom:0;width:1px;background:linear-gradient(180deg,transparent,var(--fascia-line) 14%,var(--fascia-line) 86%,transparent)}
+.logo{flex:none;width:60px;height:60px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 3px rgba(0,0,0,.12),0 10px 22px -10px rgba(0,0,0,.7)}
+.mark{justify-self:stretch;align-self:center;min-width:0;margin:0;display:grid;gap:5px;justify-items:center;font-family:var(--font-display);text-transform:uppercase;color:var(--fascia-ink);line-height:.92;font-weight:400}
+.mark span{display:block;width:max-content;white-space:nowrap;transition:none!important}   /* se miden al instante para ajustar el tamaño */
+.script{margin:0;font:600 20px/1.12 var(--font-script);color:var(--sign);text-wrap:balance}
+.hours{display:flex;align-items:center;gap:8px;margin:12px 0 0;font-size:14px;color:var(--fascia-muted)}
+.hours .i{width:17px;height:17px}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.cta .btn{flex:1 1 auto}
+.hero .btn-ghost{background:var(--fascia-fill);color:var(--fascia-ink)}
+.tg{white-space:nowrap}
+.hero-in{position:relative;max-width:1240px;margin:0 auto}
+.hero-foot{display:grid}
+
+/* ---------- Idiomas: banderas ---------- */
+.langs{gap:2px}
+.langs button{min-width:0;width:44px;height:34px;padding:0;display:grid;place-items:center;letter-spacing:0}
+.flag{position:relative;display:block;width:24px;height:16px;border-radius:3px;overflow:hidden;opacity:.82;filter:saturate(.8);transform:scale(.9);transition:opacity .2s,filter .2s,transform .3s var(--ease)}
+.flag svg{display:block;width:100%;height:100%}
+.flag::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(0,0,0,.16);background:linear-gradient(180deg,rgba(255,255,255,.24),rgba(255,255,255,0) 46%,rgba(0,0,0,.1))}
+.langs button[aria-pressed="true"] .flag{opacity:1;filter:none;transform:none;box-shadow:0 1px 3px rgba(0,0,0,.28)}

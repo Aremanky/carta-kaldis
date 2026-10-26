@@ -1,0 +1,2814 @@
+{
+  "conAlergenos": true,
+  "secciones": [
+    { "id": "cafes", "nombre": { "es": "Cafés", "en": "Coffee", "fr": "Cafés" } },
+    {
+      "id": "chocolate",
+      "nombre": {
+        "es": "Chocolates, tés e infusiones",
+        "en": "Hot chocolate, tea & infusions",
+        "fr": "Chocolats chauds, thés et infusions"
+      },
+      "corto": { "es": "Chocolate y té", "en": "Chocolate & tea", "fr": "Chocolat et thé" }
+    },
+    {
+      "id": "desayunos",
+      "nombre": { "es": "Desayunos", "en": "Breakfast", "fr": "Petits-déjeuners" },
+      "panes": {
+        "sinSuplemento": {
+          "es": ["Mollete", "Bollo", "Integral", "Artesano"],
+          "en": ["Mollete", "Roll", "Wholemeal", "Artisan"],
+          "fr": ["Mollete", "Petit pain", "Complet", "Artisanal"]
+        },
+        "conSuplemento": {
+          "es": ["Multicereal", "Sin gluten", "Sin lactosa"],
+          "en": ["Multigrain", "Gluten-free", "Lactose-free"],
+          "fr": ["Multicéréales", "Sans gluten", "Sans lactose"]
+        },
+        "suplemento": { "media": 0.2, "entera": 0.4 },
+        "nota": {
+          "es": "",
+          "en": "Mollete is a soft Andalusian bun.",
+          "fr": "Le mollete est un petit pain moelleux andalou."
+        }
+      }
+    },
+    {
+      "id": "especiales",
+      "nombre": { "es": "Tostadas especiales", "en": "Signature toasts", "fr": "Tartines spéciales" },
+      "corto": { "es": "Especiales", "en": "Specials", "fr": "Spéciales" },
+      "intro": {
+        "es": "En pan multicereal.",
+        "en": "On multigrain bread.",
+        "fr": "Sur pain multicéréales."
+      },
+      "formato": "carrusel"
+    },
+    { "id": "bowls", "nombre": { "es": "Bowls", "en": "Bowls", "fr": "Bowls" }, "formato": "cuadricula" },
+    {
+      "id": "dulces",
+      "nombre": { "es": "Dulces", "en": "Sweets", "fr": "Douceurs" },
+      "intro": {
+        "es": "Visita también nuestras vitrinas de pasteles y tartas.",
+        "en": "Also take a look at our cake and pastry counter.",
+        "fr": "Jetez aussi un œil à nos vitrines de gâteaux et de tartes."
+      }
+    },
+    { "id": "helados", "nombre": { "es": "Helados", "en": "Ice cream", "fr": "Glaces" } },
+    {
+      "id": "refrescos",
+      "nombre": { "es": "Refrescos y zumos", "en": "Soft drinks & juices", "fr": "Boissons fraîches et jus" },
+      "corto": { "es": "Refrescos", "en": "Soft drinks", "fr": "Boissons fraîches" },
+      "formato": "compacta"
+    },
+    {
+      "id": "copas",
+      "nombre": { "es": "Cervezas, vinos y copas", "en": "Beer, wine & spirits", "fr": "Bières, vins et alcools" },
+      "corto": { "es": "Cervezas y copas", "en": "Beer & spirits", "fr": "Bières et alcools" },
+      "formato": "compacta"
+    },
+    {
+      "id": "picar",
+      "nombre": { "es": "Algo para picar", "en": "Small plates", "fr": "À grignoter" },
+      "corto": { "es": "Para picar", "en": "Small plates", "fr": "À grignoter" }
+    },
+    {
+      "id": "montaditos",
+      "nombre": { "es": "Montaditos", "en": "Montaditos", "fr": "Montaditos" },
+      "intro": { "es": "", "en": "Small sandwiches on a soft roll.", "fr": "Petits sandwichs sur pain moelleux." },
+      "formato": "compacta"
+    },
+    {
+      "id": "bocadillos",
+      "nombre": {
+        "es": "Sándwiches, baguettes y bocadillos",
+        "en": "Sandwiches, baguettes & rolls",
+        "fr": "Sandwichs, baguettes et bocadillos"
+      },
+      "corto": { "es": "Bocadillos", "en": "Sandwiches", "fr": "Sandwichs" }
+    }
+  ],
+  "productos": [
+    {
+      "id": "cafe",
+      "seccion": "cafes",
+      "nombre": { "es": "Café", "en": "Coffee", "fr": "Café" },
+      "precios": [
+        { "precio": 1.5, "etiqueta": { "es": "Normal", "en": "Regular", "fr": "Normal" } },
+        { "precio": 1.6, "etiqueta": { "es": "Para llevar", "en": "Takeaway", "fr": "À emporter" } },
+        { "precio": 2.6, "etiqueta": { "es": "Desayuno XXL", "en": "XXL breakfast", "fr": "Format XXL" } }
+      ],
+      "alergenos": null,
+      "foto": "cafe",
+      "caliente": true,
+      "dibujo": { "type": "cup", "colors": ["#8a5a36", "#f3e3c8"], "latte": "heart" }
+    },
+    {
+      "id": "bombon",
+      "seccion": "cafes",
+      "nombre": { "es": "Café bombón", "en": "Café bombón", "fr": "Café bombón" },
+      "descripcion": { "es": "", "en": "Espresso with condensed milk.", "fr": "Expresso au lait concentré sucré." },
+      "precios": [{ "precio": 1.7 }],
+      "alergenos": ["gluten", "milk", "sulphites"],
+      "foto": "bombon",
+      "dibujo": { "type": "glass", "colors": ["#4a2614", "#f1e2c2", "#2a160c"], "layers": true }
+    },
+    {
+      "id": "leche",
+      "seccion": "cafes",
+      "nombre": { "es": "Vaso de leche", "en": "Glass of milk", "fr": "Verre de lait" },
+      "precios": [{ "precio": 1.5 }],
+      "alergenos": null,
+      "foto": "leche",
+      "dibujo": { "type": "glass", "colors": ["#f4f1ea", "#ffffff", "#e2ddd2"] }
+    },
+    {
+      "id": "carajillo",
+      "seccion": "cafes",
+      "nombre": { "es": "Carajillo", "en": "Carajillo", "fr": "Carajillo" },
+      "descripcion": { "es": "", "en": "Coffee with a dash of spirit.", "fr": "Café arrosé d’un trait d’alcool." },
+      "precios": [{ "precio": 1.7 }],
+      "alergenos": ["gluten", "milk", "sulphites"],
+      "foto": "carajillo",
+      "caliente": true,
+      "dibujo": { "type": "glass", "colors": ["#3a1f12", "#a8703e", "#2a160c"], "small": true, "layers": true }
+    },
+    {
+      "id": "vienes",
+      "seccion": "cafes",
+      "nombre": { "es": "Café vienés", "en": "Viennese coffee", "fr": "Café viennois" },
+      "descripcion": { "es": "Café, nata y canela.", "en": "Coffee, cream and cinnamon.", "fr": "Café, chantilly et cannelle." },
+      "precios": [{ "precio": 2.2 }],
+      "alergenos": ["gluten", "peanuts", "milk", "nuts", "celery", "sesame", "sulphites"],
+      "foto": "vienes",
+      "caliente": true,
+      "dibujo": { "type": "cup", "colors": ["#6b3f22", "#fbf4ea"], "latte": "cream" }
+    },
+    {
+      "id": "mokaccino",
+      "seccion": "cafes",
+      "nombre": { "es": "Café mokaccino", "en": "Mokaccino", "fr": "Mokaccino" },
+      "descripcion": {
+        "es": "Café con leche condensada, nata y canela.",
+        "en": "Coffee with condensed milk, cream and cinnamon.",
+        "fr": "Café au lait concentré sucré, chantilly et cannelle."
+      },
+      "precios": [{ "precio": 2.5 }],
+      "alergenos": ["gluten", "peanuts", "milk", "nuts", "celery", "sesame", "sulphites"],
+      "foto": "mokaccino",
+      "caliente": true,
+      "dibujo": { "type": "cup", "colors": ["#7a4a2a", "#fbf4ea"], "latte": "cream" }
+    },
+    {
+      "id": "caramelo",
+      "seccion": "cafes",
+      "nombre": { "es": "Café al caramelo", "en": "Caramel coffee", "fr": "Café caramel" },
+      "descripcion": { "es": "Café, caramelo y nata.", "en": "Coffee, caramel and cream.", "fr": "Café, caramel et chantilly." },
+      "precios": [{ "precio": 2.2 }],
+      "alergenos": ["gluten", "peanuts", "milk", "nuts", "celery", "sesame", "sulphites"],
+      "foto": "caramelo",
+      "caliente": true,
+      "dibujo": { "type": "cup", "colors": ["#8a5a36", "#fbf4ea"], "latte": "caramel" }
+    },
+    {
+      "id": "helado-caramelo",
+      "seccion": "cafes",
+      "nombre": { "es": "Café helado al caramelo", "en": "Caramel iced coffee", "fr": "Café glacé caramel" },
+      "descripcion": {
+        "es": "Café expreso, caramelo, helado de vainilla y nata.",
+        "en": "Espresso, caramel, vanilla ice cream and cream.",
+        "fr": "Expresso, caramel, glace vanille et chantilly."
+      },
+      "precios": [{ "precio": 3.5 }],
+      "alergenos": ["gluten", "eggs", "peanuts", "milk", "nuts", "celery", "sesame", "sulphites"],
+      "foto": "helado-caramelo",
+      "dibujo": { "type": "scoops", "colors": ["#f6ecd2"], "n": 1, "coffee": "#4a2614", "sauce": "#c47a2a" }
+    },
+    {
+      "id": "irlandes",
+      "seccion": "cafes",
+      "nombre": { "es": "Café irlandés", "en": "Irish coffee", "fr": "Irish coffee" },
+      "descripcion": { "es": "Café, whisky y nata.", "en": "Coffee, whisky and cream.", "fr": "Café, whisky et crème." },
+      "precios": [{ "precio": 4.5 }],
+      "alergenos": ["gluten", "peanuts", "milk", "nuts", "celery", "sesame", "sulphites"],
+      "foto": "irlandes",
+      "caliente": true,
+      "dibujo": { "type": "glass", "colors": ["#3a1f12", "#fbf4ea", "#2a160c"], "cream": true }
+    },
+    {
+      "id": "capuchino",
+      "seccion": "cafes",
+      "nombre": { "es": "Capuchino clásico", "en": "Classic cappuccino", "fr": "Cappuccino classique" },
+      "precios": [{ "precio": 1.9 }],
+      "alergenos": ["gluten", "peanuts", "milk", "nuts", "celery", "sesame", "sulphites"],
+      "foto": "capuchino",
+      "caliente": true,
+      "dibujo": { "type": "cup", "colors": ["#7a4a2a", "#f6ead8"], "latte": "cocoa" }
+    },
+    {
+      "id": "capuchino-sabores",
+      "seccion": "cafes",
+      "nombre": { "es": "Capuchino de sabores", "en": "Flavoured cappuccino", "fr": "Cappuccino aromatisé" },
+      "descripcion": { "es": "Elige el sabor.", "en": "Pick your flavour.", "fr": "Choisissez le parfum." },
+      "precios": [{ "precio": 2.2 }],
+      "alergenos": ["gluten", "eggs", "peanuts", "soy", "milk", "nuts", "celery", "mustard", "sesame", "sulphites"],
+      "foto": "capuchino-sabores",
+      "caliente": true,
+      "opciones": [
+        {
+          "titulo": { "es": "Sabores", "en": "Flavours", "fr": "Parfums" },
+          "lista": {
+            "es": ["Canela", "Coco", "Vainilla", "Avellana", "Chocolate", "Menta verde", "Caramelo", "Plátano"],
+            "en": ["Cinnamon", "Coconut", "Vanilla", "Hazelnut", "Chocolate", "Spearmint", "Caramel", "Banana"],
+            "fr": ["Cannelle", "Noix de coco", "Vanille", "Noisette", "Chocolat", "Menthe verte", "Caramel", "Banane"]
+          }
+        }
+      ],
+      "dibujo": { "type": "cup", "colors": ["#8a5a36", "#f6ead8"], "latte": "heart" }
+    },
+    {
+      "id": "choco-taza",
+      "seccion": "chocolate",
+      "grupo": { "es": "Chocolates", "en": "Hot chocolate", "fr": "Chocolats chauds" },
+      "nombre": { "es": "Chocolate a la taza", "en": "Hot chocolate", "fr": "Chocolat chaud à l’espagnole" },
+      "precios": [{ "precio": 2 }],
+      "alergenos": ["gluten", "peanuts", "milk", "nuts", "sesame", "sulphites"],
+      "foto": "choco-taza",
+      "caliente": true,
+      "dibujo": { "type": "cup", "colors": ["#3d2116", "#5a3322"], "latte": "none" }
+    },
+    {
+      "id": "choco-sabores",
+      "seccion": "chocolate",
+      "grupo": { "es": "Chocolates", "en": "Hot chocolate", "fr": "Chocolats chauds" },
+      "nombre": { "es": "Chocolate de sabores", "en": "Flavoured hot chocolate", "fr": "Chocolat chaud aromatisé" },
+      "descripcion": { "es": "Elige el sabor.", "en": "Pick your flavour.", "fr": "Choisissez le parfum." },
+      "precios": [{ "precio": 2.2 }],
+      "alergenos": ["gluten", "eggs", "peanuts", "soy", "milk", "nuts", "celery", "mustard", "sesame", "sulphites"],
+      "caliente": true,
+      "opciones": [
+        {
+          "titulo": { "es": "Sabores", "en": "Flavours", "fr": "Parfums" },
+          "lista": {
+            "es": ["Canela", "Coco", "Vainilla", "Avellana", "Chocolate", "Menta verde", "Caramelo", "Plátano"],
+            "en": ["Cinnamon", "Coconut", "Vanilla", "Hazelnut", "Chocolate", "Spearmint", "Caramel", "Banana"],
+            "fr": ["Cannelle", "Noix de coco", "Vanille", "Noisette", "Chocolat", "Menthe verte", "Caramel", "Banane"]
+          }
+        }
+      ],
+      "dibujo": { "type": "cup", "colors": ["#4a2a1a", "#7a4a2e"], "latte": "swirl" }
+    },
+    {
+      "id": "suizo",
+      "seccion": "chocolate",
+      "grupo": { "es": "Chocolates", "en": "Hot chocolate", "fr": "Chocolats chauds" },
+      "nombre": { "es": "Chocolate suizo", "en": "Swiss hot chocolate", "fr": "Chocolat viennois" },
+      "descripcion": {
+        "es": "Chocolate caliente, nata y virutas de chocolate.",
+        "en": "Hot chocolate, cream and chocolate shavings.",
+        "fr": "Chocolat chaud, chantilly et copeaux de chocolat."
+      },
+      "precios": [{ "precio": 2.2 }],
+      "alergenos": ["gluten", "peanuts", "milk", "nuts", "celery", "sesame", "sulphites"],
+      "caliente": true,
+      "dibujo": { "type": "cup", "colors": ["#3d2116", "#fbf4ea"], "latte": "cream" }
+    },
+    {
+      "id": "ruso",
+      "seccion": "chocolate",
+      "grupo": { "es": "Chocolates", "en": "Hot chocolate", "fr": "Chocolats chauds" },
+      "nombre": { "es": "Chocolate ruso", "en": "Russian hot chocolate", "fr": "Chocolat russe" },
+      "descripcion": {
+        "es": "Chocolate caliente y helado de vainilla.",
+        "en": "Hot chocolate and vanilla ice cream.",
+        "fr": "Chocolat chaud et glace vanille."
+      },
+      "precios": [{ "precio": 3.5 }],
+      "alergenos": ["gluten", "eggs", "peanuts", "milk", "nuts", "celery", "sesame", "sulphites"],
+      "dibujo": { "type": "scoops", "colors": ["#f6ecd2"], "n": 1, "coffee": "#3d2116" }
+    },
+    {
+      "id": "colacao",
+      "seccion": "chocolate",
+      "grupo": { "es": "Chocolates", "en": "Hot chocolate", "fr": "Chocolats chauds" },
+      "nombre": { "es": "Cola Cao", "en": "Cola Cao", "fr": "Cola Cao" },
+      "descripcion": { "es": "", "en": "Cocoa drink with milk.", "fr": "Boisson cacaotée au lait." },
+      "precios": [
+        { "precio": 1.7, "etiqueta": { "es": "Normal", "en": "Regular", "fr": "Normal" } },
+        { "precio": 2.2, "etiqueta": { "es": "Grande", "en": "Large", "fr": "Grand" } }
+      ],
+      "alergenos": ["gluten", "peanuts", "soy", "milk", "nuts", "sesame", "sulphites"],
+      "foto": "colacao",
+      "caliente": true,
+      "dibujo": { "type": "cup", "colors": ["#8b5a3c", "#d9b38f"], "latte": "none" }
+    },
+    {
+      "id": "infusion",
+      "seccion": "chocolate",
+      "grupo": { "es": "Tés e infusiones", "en": "Tea & infusions", "fr": "Thés et infusions" },
+      "nombre": { "es": "Infusión clásica", "en": "Classic infusion", "fr": "Infusion classique" },
+      "descripcion": {
+        "es": "Tila, té, manzanilla, menta poleo, té rojo o té verde.",
+        "en": "Linden, tea, camomile, pennyroyal mint, red tea or green tea.",
+        "fr": "Tilleul, thé, camomille, menthe pouliot, thé rouge ou thé vert."
+      },
+      "precios": [
+        { "precio": 1.4, "etiqueta": { "es": "Normal", "en": "Regular", "fr": "Normal" } },
+        { "precio": 1.6, "etiqueta": { "es": "Doble", "en": "Double", "fr": "Double" } },
+        { "precio": 1.6, "etiqueta": { "es": "Con leche", "en": "With milk", "fr": "Au lait" } }
+      ],
+      "alergenos": ["gluten", "eggs", "peanuts", "soy", "milk", "nuts", "celery", "mustard", "sesame", "sulphites"],
+      "foto": "infusion",
+      "caliente": true,
+      "dibujo": { "type": "cup", "colors": ["#b5722a", "#e7b15e"], "latte": "tea" }
+    },
+    {
+      "id": "piramide",
+      "seccion": "chocolate",
+      "grupo": { "es": "Tés e infusiones", "en": "Tea & infusions", "fr": "Thés et infusions" },
+      "nombre": {
+        "es": "Infusión gourmet en pirámide",
+        "en": "Gourmet pyramid infusion",
+        "fr": "Infusion gourmet en sachet pyramide"
+      },
+      "descripcion": { "es": "Elige entre 23 variedades.", "en": "Choose from 23 blends.", "fr": "Au choix parmi 23 variétés." },
+      "precios": [{ "precio": 1.7 }],
+      "alergenos": ["gluten", "eggs", "peanuts", "soy", "milk", "nuts", "celery", "mustard", "sesame", "sulphites"],
+      "foto": "piramide",
+      "caliente": true,
+      "opciones": [
+        {
+          "titulo": { "es": "Variedades", "en": "Blends", "fr": "Variétés" },
+          "lista": {
+            "es": [
+              "Digest",
+              "Earl Grey",
+              "Frutas del bosque",
+              "Frutas mediterráneas",
+              "Manzana frambuesa",
+              "Manzanilla",
+              "Menta",
+              "Rooibos Copacabana",
+              "Rooibos relax",
+              "Té moruno hierbabuena",
+              "Té negro avellana con aroma de plátano",
+              "Té negro chai",
+              "Té negro chocolate y menta",
+              "Té negro Orange Pekoe",
+              "Té negro pakistaní",
+              "Té negro sueños de canela",
+              "Té negro vainilla",
+              "Té rojo cuerpo del deseo",
+              "Té rooibos de albahaca",
+              "Té rooibos vainilla",
+              "Té verde con cerezas",
+              "Té verde jazmín",
+              "Té verde jengibre y limón"
+            ],
+            "en": [
+              "Digest",
+              "Earl Grey",
+              "Forest fruits",
+              "Mediterranean fruits",
+              "Apple & raspberry",
+              "Camomile",
+              "Mint",
+              "Rooibos Copacabana",
+              "Rooibos relax",
+              "Moroccan mint tea",
+              "Black tea, hazelnut & banana",
+              "Chai black tea",
+              "Chocolate mint black tea",
+              "Orange Pekoe black tea",
+              "Pakistani black tea",
+              "Cinnamon dreams black tea",
+              "Vanilla black tea",
+              "“Cuerpo del deseo” red tea",
+              "Basil rooibos",
+              "Vanilla rooibos",
+              "Green tea with cherries",
+              "Jasmine green tea",
+              "Ginger & lemon green tea"
+            ],
+            "fr": [
+              "Digest",
+              "Earl Grey",
+              "Fruits des bois",
+              "Fruits méditerranéens",
+              "Pomme et framboise",
+              "Camomille",
+              "Menthe",
+              "Rooibos Copacabana",
+              "Rooibos relax",
+              "Thé à la menthe marocain",
+              "Thé noir noisette et banane",
+              "Thé noir chai",
+              "Thé noir chocolat-menthe",
+              "Thé noir Orange Pekoe",
+              "Thé noir pakistanais",
+              "Thé noir rêves de cannelle",
+              "Thé noir vanille",
+              "Thé rouge « Cuerpo del deseo »",
+              "Rooibos au basilic",
+              "Rooibos vanille",
+              "Thé vert aux cerises",
+              "Thé vert au jasmin",
+              "Thé vert gingembre et citron"
+            ]
+          }
+        }
+      ],
+      "dibujo": { "type": "cup", "colors": ["#9a4a2a", "#d98a4a"], "latte": "tea" }
+    },
+    {
+      "id": "granel",
+      "seccion": "chocolate",
+      "grupo": { "es": "Tés e infusiones", "en": "Tea & infusions", "fr": "Thés et infusions" },
+      "nombre": { "es": "Infusión a granel", "en": "Loose-leaf infusion", "fr": "Infusion en vrac" },
+      "descripcion": { "es": "Elige entre 10 variedades.", "en": "Choose from 10 blends.", "fr": "Au choix parmi 10 variétés." },
+      "precios": [{ "precio": 1.8 }],
+      "alergenos": ["gluten", "eggs", "peanuts", "soy", "milk", "nuts", "celery", "mustard", "sesame", "sulphites"],
+      "foto": "granel",
+      "caliente": true,
+      "opciones": [
+        {
+          "titulo": { "es": "Variedades", "en": "Blends", "fr": "Variétés" },
+          "lista": {
+            "es": [
+              "Frutas del bosque",
+              "Rooibos relax",
+              "Té negro canela",
+              "English Breakfast",
+              "Té rojo Pu-erh",
+              "Té verde menta",
+              "Earl Grey",
+              "Manzanilla dulce flor",
+              "Té blanco Pai Mu Tan",
+              "Té verde lima japonesa"
+            ],
+            "en": [
+              "Forest fruits",
+              "Rooibos relax",
+              "Cinnamon black tea",
+              "English Breakfast",
+              "Pu-erh red tea",
+              "Mint green tea",
+              "Earl Grey",
+              "Sweet flower camomile",
+              "Pai Mu Tan white tea",
+              "Japanese lime green tea"
+            ],
+            "fr": [
+              "Fruits des bois",
+              "Rooibos relax",
+              "Thé noir cannelle",
+              "English Breakfast",
+              "Thé Pu-erh",
+              "Thé vert à la menthe",
+              "Earl Grey",
+              "Camomille douce fleur",
+              "Thé blanc Pai Mu Tan",
+              "Thé vert au citron vert japonais"
+            ]
+          }
+        }
+      ],
+      "dibujo": { "type": "cup", "colors": ["#7a8a2a", "#c9c25e"], "latte": "tea" }
+    },
+    {
+      "id": "matcha",
+      "seccion": "chocolate",
+      "grupo": { "es": "Tés e infusiones", "en": "Tea & infusions", "fr": "Thés et infusions" },
+      "nombre": { "es": "Té matcha latte", "en": "Matcha latte", "fr": "Matcha latte" },
+      "precios": [{ "precio": 2.8 }],
+      "alergenos": null,
+      "foto": "matcha",
+      "caliente": true,
+      "dibujo": { "type": "cup", "colors": ["#6f9a3c", "#eef3df"], "latte": "heart" }
+    },
+    {
+      "id": "churros",
+      "seccion": "desayunos",
+      "nombre": { "es": "Churros", "en": "Churros", "fr": "Churros" },
+      "precios": [{ "precio": 1.9 }],
+      "alergenos": ["gluten", "eggs", "milk", "sulphites"],
+      "foto": "churros",
+      "caliente": true,
+      "dibujo": { "type": "churros", "colors": ["#d79a4f", "#f6ead2"], "n": 5 }
+    },
+    {
+      "id": "t-simple",
+      "seccion": "desayunos",
+      "grupo": { "es": "Tostadas", "en": "Toast", "fr": "Tartines" },
+      "nombre": { "es": "Tostada simple", "en": "Simple toast", "fr": "Tartine simple" },
+      "descripcion": {
+        "es": "Mantequilla, aceite, tomate, mermelada, sobrasada, pringá o paté.",
+        "en": "Butter, olive oil, tomato, jam, sobrasada, pringá (stew meats) or pâté.",
+        "fr": "Beurre, huile d’olive, tomate, confiture, sobrasada, pringá (viandes mijotées) ou pâté."
+      },
+      "precios": [
+        { "precio": 1.3, "etiqueta": { "es": "Media", "en": "Half", "fr": "Demie" } },
+        { "precio": 1.7, "etiqueta": { "es": "Entera", "en": "Whole", "fr": "Entière" } }
+      ],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "top", "top": ["tomato"] }
+    },
+    {
+      "id": "t-york",
+      "seccion": "desayunos",
+      "grupo": { "es": "Tostadas", "en": "Toast", "fr": "Tartines" },
+      "nombre": { "es": "Tostada con york", "en": "Toast with cooked ham", "fr": "Tartine au jambon blanc" },
+      "descripcion": {
+        "es": "Con mantequilla, aceite o tomate.",
+        "en": "With butter, olive oil or tomato.",
+        "fr": "Avec beurre, huile d’olive ou tomate."
+      },
+      "precios": [
+        { "precio": 1.8, "etiqueta": { "es": "Media", "en": "Half", "fr": "Demie" } },
+        { "precio": 2.2, "etiqueta": { "es": "Entera", "en": "Whole", "fr": "Entière" } }
+      ],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "top", "top": ["tomato", "york"] }
+    },
+    {
+      "id": "t-sanlucar",
+      "seccion": "desayunos",
+      "grupo": { "es": "Tostadas", "en": "Toast", "fr": "Tartines" },
+      "nombre": {
+        "es": "Tostada Sanlúcar de Barrameda",
+        "en": "Sanlúcar de Barrameda toast",
+        "fr": "Tartine Sanlúcar de Barrameda"
+      },
+      "descripcion": {
+        "es": "Manteca colorá con carne.",
+        "en": "Red paprika lard with meat.",
+        "fr": "Saindoux au paprika et à la viande."
+      },
+      "precios": [
+        { "precio": 1.9, "etiqueta": { "es": "Media", "en": "Half", "fr": "Demie" } },
+        { "precio": 2.3, "etiqueta": { "es": "Entera", "en": "Whole", "fr": "Entière" } }
+      ],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "top", "top": ["lard"] }
+    },
+    {
+      "id": "t-pavo",
+      "seccion": "desayunos",
+      "grupo": { "es": "Tostadas", "en": "Toast", "fr": "Tartines" },
+      "nombre": { "es": "Tostada con pavo", "en": "Toast with turkey", "fr": "Tartine à la dinde" },
+      "descripcion": {
+        "es": "Con mantequilla, aceite o tomate.",
+        "en": "With butter, olive oil or tomato.",
+        "fr": "Avec beurre, huile d’olive ou tomate."
+      },
+      "precios": [
+        { "precio": 1.8, "etiqueta": { "es": "Media", "en": "Half", "fr": "Demie" } },
+        { "precio": 2.2, "etiqueta": { "es": "Entera", "en": "Whole", "fr": "Entière" } }
+      ],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "top", "top": ["butter", "turkey"] }
+    },
+    {
+      "id": "t-mechada",
+      "seccion": "desayunos",
+      "grupo": { "es": "Tostadas", "en": "Toast", "fr": "Tartines" },
+      "nombre": { "es": "Tostada con mechada", "en": "Toast with carne mechada", "fr": "Tartine à la carne mechada" },
+      "descripcion": { "es": "", "en": "Andalusian stuffed roast meat.", "fr": "Rôti farci à l’andalouse." },
+      "precios": [
+        { "precio": 2.1, "etiqueta": { "es": "Media", "en": "Half", "fr": "Demie" } },
+        { "precio": 2.8, "etiqueta": { "es": "Entera", "en": "Whole", "fr": "Entière" } }
+      ],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "top", "top": ["mechada"] }
+    },
+    {
+      "id": "t-jamon",
+      "seccion": "desayunos",
+      "grupo": { "es": "Tostadas", "en": "Toast", "fr": "Tartines" },
+      "nombre": { "es": "Tostada con jamón ibérico", "en": "Toast with Iberian ham", "fr": "Tartine au jambon ibérique" },
+      "descripcion": {
+        "es": "Con mantequilla, aceite o tomate.",
+        "en": "With butter, olive oil or tomato.",
+        "fr": "Avec beurre, huile d’olive ou tomate."
+      },
+      "precios": [
+        { "precio": 2.2, "etiqueta": { "es": "Media", "en": "Half", "fr": "Demie" } },
+        { "precio": 3, "etiqueta": { "es": "Entera", "en": "Whole", "fr": "Entière" } }
+      ],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "top", "top": ["tomato", "ham"] }
+    },
+    {
+      "id": "t-aguacate",
+      "seccion": "desayunos",
+      "grupo": { "es": "Tostadas", "en": "Toast", "fr": "Tartines" },
+      "nombre": { "es": "Tostada con aguacate", "en": "Avocado toast", "fr": "Tartine à l’avocat" },
+      "descripcion": { "es": "Con aceite o tomate.", "en": "With olive oil or tomato.", "fr": "Avec huile d’olive ou tomate." },
+      "precios": [
+        { "precio": 2.1, "etiqueta": { "es": "Media", "en": "Half", "fr": "Demie" } },
+        { "precio": 2.6, "etiqueta": { "es": "Entera", "en": "Whole", "fr": "Entière" } }
+      ],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "top", "top": ["tomato", "avocado"] }
+    },
+    {
+      "id": "t-tortilla",
+      "seccion": "desayunos",
+      "grupo": { "es": "Tostadas", "en": "Toast", "fr": "Tartines" },
+      "nombre": { "es": "Tostada de tortilla", "en": "Omelette toast", "fr": "Tartine à l’omelette" },
+      "descripcion": {
+        "es": "De patatas, francesa o revueltos.",
+        "en": "Potato omelette, plain omelette or scrambled eggs.",
+        "fr": "Omelette aux pommes de terre, omelette nature ou œufs brouillés."
+      },
+      "precios": [
+        { "precio": 2, "etiqueta": { "es": "Media", "en": "Half", "fr": "Demie" } },
+        { "precio": 2.8, "etiqueta": { "es": "Entera", "en": "Whole", "fr": "Entière" } }
+      ],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "top", "top": ["omelette"] }
+    },
+    {
+      "id": "esp-kaldis",
+      "seccion": "especiales",
+      "nombre": { "es": "Especial Kaldi's", "en": "Kaldi's special", "fr": "Spéciale Kaldi's" },
+      "descripcion": {
+        "es": "Aguacate, rúcula, membrillo, cherry, queso fresco y aceite.",
+        "en": "Avocado, rocket, quince jelly, cherry tomatoes, fresh cheese and olive oil.",
+        "fr": "Avocat, roquette, pâte de coing, tomates cerises, fromage frais et huile d’olive."
+      },
+      "precios": [
+        { "precio": 4.1, "etiqueta": { "es": "Entera", "en": "Whole", "fr": "Entière" } }
+      ],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "top", "top": ["avocado", "cheese", "quince", "cherry", "rocket"], "grain": true }
+    },
+    {
+      "id": "esp-salmon",
+      "seccion": "especiales",
+      "nombre": { "es": "Especial salmón", "en": "Salmon special", "fr": "Spéciale saumon" },
+      "descripcion": {
+        "es": "Salmón, Philadelphia, aguacate y rúcula.",
+        "en": "Salmon, Philadelphia cream cheese, avocado and rocket.",
+        "fr": "Saumon, Philadelphia, avocat et roquette."
+      },
+      "precios": [
+        { "precio": 4.1, "etiqueta": { "es": "Entera", "en": "Whole", "fr": "Entière" } }
+      ],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "top", "top": ["cream", "avocado", "salmon", "rocket"], "grain": true }
+    },
+    {
+      "id": "esp-anchoas",
+      "seccion": "especiales",
+      "nombre": { "es": "Especial anchoas", "en": "Anchovy special", "fr": "Spéciale anchois" },
+      "descripcion": {
+        "es": "Anchoas, rodaja de tomate y queso fresco.",
+        "en": "Anchovies, a slice of tomato and fresh cheese.",
+        "fr": "Anchois, rondelle de tomate et fromage frais."
+      },
+      "precios": [
+        { "precio": 4.1, "etiqueta": { "es": "Entera", "en": "Whole", "fr": "Entière" } }
+      ],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "top", "top": ["tomatoSlice", "cheese", "anchovy"], "grain": true }
+    },
+    {
+      "id": "esp-pavo",
+      "seccion": "especiales",
+      "nombre": { "es": "Especial pavo", "en": "Turkey special", "fr": "Spéciale dinde" },
+      "descripcion": {
+        "es": "Pavo, rúcula, aguacate y huevo duro.",
+        "en": "Turkey, rocket, avocado and boiled egg.",
+        "fr": "Dinde, roquette, avocat et œuf dur."
+      },
+      "precios": [
+        { "precio": 4.1, "etiqueta": { "es": "Entera", "en": "Whole", "fr": "Entière" } }
+      ],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "top", "top": ["turkey", "avocado", "egg", "rocket"], "grain": true }
+    },
+    {
+      "id": "esp-atun",
+      "seccion": "especiales",
+      "nombre": { "es": "Especial tomate y atún", "en": "Tomato & tuna special", "fr": "Spéciale tomate et thon" },
+      "descripcion": {
+        "es": "Atún, pimiento morrón y queso fresco.",
+        "en": "Tuna, roasted red pepper and fresh cheese.",
+        "fr": "Thon, poivron rouge rôti et fromage frais."
+      },
+      "precios": [
+        { "precio": 4.1, "etiqueta": { "es": "Entera", "en": "Whole", "fr": "Entière" } }
+      ],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "top", "top": ["tomato", "tuna", "cheese", "pepper"], "grain": true }
+    },
+    {
+      "id": "esp-vegana",
+      "seccion": "especiales",
+      "nombre": { "es": "Especial vegana", "en": "Vegan special", "fr": "Spéciale végane" },
+      "descripcion": {
+        "es": "Rúcula, tomate cherry, aguacate, membrillo y nueces.",
+        "en": "Rocket, cherry tomatoes, avocado, quince jelly and walnuts.",
+        "fr": "Roquette, tomates cerises, avocat, pâte de coing et noix."
+      },
+      "precios": [
+        { "precio": 4.1, "etiqueta": { "es": "Entera", "en": "Whole", "fr": "Entière" } }
+      ],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "etiquetas": ["vegan"],
+      "dibujo": { "type": "toast", "kind": "top", "top": ["avocado", "quince", "cherry", "walnut", "rocket"], "grain": true }
+    },
+    {
+      "id": "bowl-platano",
+      "seccion": "bowls",
+      "nombre": { "es": "Bowl plátano y mango", "en": "Banana & mango bowl", "fr": "Bowl banane et mangue" },
+      "descripcion": {
+        "es": "Base de yogur griego natural con plátano, mango y chía. Con granola casera y crema de cacahuete.",
+        "en": "Natural Greek yogurt with banana, mango and chia, topped with homemade granola and peanut butter.",
+        "fr": "Yaourt grec nature, banane, mangue et chia, avec granola maison et beurre de cacahuète."
+      },
+      "precios": [{ "precio": 6.8 }],
+      "alergenos": null,
+      "dibujo": { "type": "sbowl", "base": "#f7f3ea", "top": ["banana", "mango", "granola", "chia", "peanut"] }
+    },
+    {
+      "id": "bowl-choco",
+      "seccion": "bowls",
+      "nombre": { "es": "Bowl choco", "en": "Choco bowl", "fr": "Bowl choco" },
+      "descripcion": {
+        "es": "Base de leche de avena con plátano, cacao, nueces y galletas cookie. Con granola casera y chocolate rallado.",
+        "en": "Oat milk base with banana, cocoa, walnuts and cookies, topped with homemade granola and grated chocolate.",
+        "fr": "Base de lait d’avoine, banane, cacao, noix et cookies, avec granola maison et chocolat râpé."
+      },
+      "precios": [{ "precio": 6.85 }],
+      "alergenos": null,
+      "dibujo": { "type": "sbowl", "base": "#7a4a2e", "top": ["banana", "walnut", "cookie", "granola", "choc"] }
+    },
+    {
+      "id": "bowl-acai",
+      "seccion": "bowls",
+      "nombre": { "es": "Bowl açaí", "en": "Açaí bowl", "fr": "Bowl açaí" },
+      "descripcion": {
+        "es": "Base de açaí con leche de avena sin lactosa, plátano, fresas y arándanos.",
+        "en": "Açaí with lactose-free oat milk, banana, strawberries and blueberries.",
+        "fr": "Açaí au lait d’avoine sans lactose, banane, fraises et myrtilles."
+      },
+      "precios": [{ "precio": 6.95 }],
+      "alergenos": null,
+      "dibujo": { "type": "sbowl", "base": "#5b2a5e", "top": ["banana", "strawberry", "blueberry"] }
+    },
+    {
+      "id": "bowl-fresas",
+      "seccion": "bowls",
+      "nombre": { "es": "Bowl mango y fresas", "en": "Mango & strawberry bowl", "fr": "Bowl mangue et fraises" },
+      "descripcion": {
+        "es": "Base de yogur griego natural con fresas, mango y chía. Con granola casera y crema de cacahuete.",
+        "en": "Natural Greek yogurt with strawberries, mango and chia, topped with homemade granola and peanut butter.",
+        "fr": "Yaourt grec nature, fraises, mangue et chia, avec granola maison et beurre de cacahuète."
+      },
+      "precios": [{ "precio": 6.8 }],
+      "alergenos": null,
+      "dibujo": { "type": "sbowl", "base": "#f7f3ea", "top": ["strawberry", "mango", "granola", "chia", "peanut"] }
+    },
+    {
+      "id": "torrija",
+      "seccion": "dulces",
+      "nombre": { "es": "Torrija de pan brioche", "en": "Brioche torrija", "fr": "Pain perdu brioché" },
+      "descripcion": {
+        "es": "Base de chocolate blanco con caramelo, helado de vainilla, miel y espolvoreado de Lotus.",
+        "en": "White chocolate and caramel base, vanilla ice cream, honey and a dusting of Lotus biscuit.",
+        "fr": "Base chocolat blanc et caramel, glace vanille, miel et spéculoos Lotus émietté."
+      },
+      "precios": [{ "precio": 6.5 }],
+      "alergenos": [
+        "gluten",
+        "eggs",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "dessert", "kind": "bar", "colors": ["#c9853a", "#f6efdf", "#e0a040"] }
+    },
+    {
+      "id": "gofre",
+      "seccion": "dulces",
+      "nombre": { "es": "Gofre", "en": "Waffle", "fr": "Gaufre" },
+      "descripcion": {
+        "es": "Con nata y el topping que elijas. Con helado, eliges también el sabor.",
+        "en": "With cream and your choice of topping. With ice cream, you also pick the flavour.",
+        "fr": "Avec chantilly et la garniture de votre choix. Avec glace, vous choisissez aussi le parfum."
+      },
+      "precios": [
+        { "precio": 4.5, "etiqueta": { "es": "Normal", "en": "Regular", "fr": "Normal" } },
+        { "precio": 5.5, "etiqueta": { "es": "Con helado", "en": "With ice cream", "fr": "Avec glace" } }
+      ],
+      "alergenos": [
+        "gluten",
+        "eggs",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "opciones": [
+        {
+          "titulo": { "es": "Para acompañar", "en": "Toppings", "fr": "Garnitures" },
+          "lista": {
+            "es": ["Chocolate", "Kinder", "Chocolate blanco", "Nutella", "Caramelo", "Fresa"],
+            "en": ["Chocolate", "Kinder", "White chocolate", "Nutella", "Caramel", "Strawberry"],
+            "fr": ["Chocolat", "Kinder", "Chocolat blanc", "Nutella", "Caramel", "Fraise"]
+          }
+        }
+      ],
+      "dibujo": { "type": "dessert", "kind": "waffle", "colors": ["#e2a85a", "#fbf4ea", "#5a2f1a"] }
+    },
+    {
+      "id": "creps",
+      "seccion": "dulces",
+      "nombre": { "es": "Creps", "en": "Crêpe", "fr": "Crêpe" },
+      "descripcion": {
+        "es": "Con nata y el topping que elijas. Con helado, eliges también el sabor.",
+        "en": "With cream and your choice of topping. With ice cream, you also pick the flavour.",
+        "fr": "Avec chantilly et la garniture de votre choix. Avec glace, vous choisissez aussi le parfum."
+      },
+      "precios": [
+        { "precio": 4.5, "etiqueta": { "es": "Normal", "en": "Regular", "fr": "Normal" } },
+        { "precio": 5.5, "etiqueta": { "es": "Con helado", "en": "With ice cream", "fr": "Avec glace" } }
+      ],
+      "alergenos": [
+        "gluten",
+        "eggs",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "opciones": [
+        {
+          "titulo": { "es": "Para acompañar", "en": "Toppings", "fr": "Garnitures" },
+          "lista": {
+            "es": ["Chocolate", "Kinder", "Chocolate blanco", "Nutella", "Caramelo", "Fresa"],
+            "en": ["Chocolate", "Kinder", "White chocolate", "Nutella", "Caramel", "Strawberry"],
+            "fr": ["Chocolat", "Kinder", "Chocolat blanc", "Nutella", "Caramel", "Fraise"]
+          }
+        }
+      ],
+      "dibujo": { "type": "dessert", "kind": "crepe", "colors": ["#efc27e", "#fbf4ea", "#5a2f1a"] }
+    },
+    {
+      "id": "creps-mixto",
+      "seccion": "dulces",
+      "nombre": { "es": "Creps mixto", "en": "Ham & cheese crêpe", "fr": "Crêpe jambon-fromage" },
+      "descripcion": { "es": "York y queso.", "en": "Cooked ham and cheese.", "fr": "Jambon blanc et fromage." },
+      "precios": [{ "precio": 4.5 }],
+      "alergenos": null,
+      "caliente": true,
+      "salado": true,
+      "dibujo": { "type": "dessert", "kind": "crepe", "colors": ["#efc27e", "#f2c94c", "#e9a3a3"] }
+    },
+    {
+      "id": "tortitas",
+      "seccion": "dulces",
+      "nombre": { "es": "Tortitas", "en": "Pancakes", "fr": "Pancakes" },
+      "descripcion": {
+        "es": "Con nata y el topping que elijas. Con helado, eliges también el sabor.",
+        "en": "With cream and your choice of topping. With ice cream, you also pick the flavour.",
+        "fr": "Avec chantilly et la garniture de votre choix. Avec glace, vous choisissez aussi le parfum."
+      },
+      "precios": [
+        { "precio": 4.5, "etiqueta": { "es": "Normal", "en": "Regular", "fr": "Normal" } },
+        { "precio": 5.5, "etiqueta": { "es": "Con helado", "en": "With ice cream", "fr": "Avec glace" } }
+      ],
+      "alergenos": [
+        "gluten",
+        "eggs",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "opciones": [
+        {
+          "titulo": { "es": "Para acompañar", "en": "Toppings", "fr": "Garnitures" },
+          "lista": {
+            "es": ["Chocolate", "Kinder", "Chocolate blanco", "Nutella", "Caramelo", "Fresa"],
+            "en": ["Chocolate", "Kinder", "White chocolate", "Nutella", "Caramel", "Strawberry"],
+            "fr": ["Chocolat", "Kinder", "Chocolat blanc", "Nutella", "Caramel", "Fraise"]
+          }
+        }
+      ],
+      "dibujo": { "type": "dessert", "kind": "pancakes", "colors": ["#d99a4e", "#fbf4ea", "#b3243a"] }
+    },
+    {
+      "id": "brownie",
+      "seccion": "dulces",
+      "nombre": { "es": "Brownie", "en": "Brownie", "fr": "Brownie" },
+      "descripcion": {
+        "es": "Con nata y el topping que elijas. Con helado, eliges también el sabor.",
+        "en": "With cream and your choice of topping. With ice cream, you also pick the flavour.",
+        "fr": "Avec chantilly et la garniture de votre choix. Avec glace, vous choisissez aussi le parfum."
+      },
+      "precios": [
+        { "precio": 4.5, "etiqueta": { "es": "Normal", "en": "Regular", "fr": "Normal" } },
+        { "precio": 5.5, "etiqueta": { "es": "Con helado", "en": "With ice cream", "fr": "Avec glace" } }
+      ],
+      "alergenos": [
+        "gluten",
+        "eggs",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "opciones": [
+        {
+          "titulo": { "es": "Para acompañar", "en": "Toppings", "fr": "Garnitures" },
+          "lista": {
+            "es": ["Chocolate", "Kinder", "Chocolate blanco", "Nutella", "Caramelo", "Fresa"],
+            "en": ["Chocolate", "Kinder", "White chocolate", "Nutella", "Caramel", "Strawberry"],
+            "fr": ["Chocolat", "Kinder", "Chocolat blanc", "Nutella", "Caramel", "Fraise"]
+          }
+        }
+      ],
+      "dibujo": { "type": "dessert", "kind": "bar", "colors": ["#4a2614", "#fbf4ea", "#2a160c"] }
+    },
+    {
+      "id": "tarrina",
+      "seccion": "helados",
+      "nombre": { "es": "Tarrina o cucurucho", "en": "Cup or cone", "fr": "Pot ou cornet" },
+      "precios": [
+        { "precio": 3.2, "etiqueta": { "es": "Pequeño", "en": "Small", "fr": "Petit" } },
+        { "precio": 4.1, "etiqueta": { "es": "Mediano", "en": "Medium", "fr": "Moyen" } },
+        { "precio": 5.3, "etiqueta": { "es": "Grande (tarrina)", "en": "Large (cup)", "fr": "Grand (pot)" } }
+      ],
+      "alergenos": null,
+      "dibujo": { "type": "scoops", "colors": ["#f4d9e0", "#9fc27a", "#f3e6c4"], "n": 3 }
+    },
+    {
+      "id": "cucurucho-choco",
+      "seccion": "helados",
+      "nombre": { "es": "Cucurucho de chocolate", "en": "Chocolate cone", "fr": "Cornet au chocolat" },
+      "precios": [{ "precio": 4.2 }],
+      "alergenos": null,
+      "dibujo": { "type": "cone", "colors": ["#f3e6c4", "#3d2116"] }
+    },
+    {
+      "id": "copa",
+      "seccion": "helados",
+      "nombre": { "es": "Copa de helado", "en": "Ice cream sundae", "fr": "Coupe glacée" },
+      "precios": [
+        { "precio": 5.8, "etiqueta": { "es": "2 bolas", "en": "2 scoops", "fr": "2 boules" } },
+        { "precio": 6.8, "etiqueta": { "es": "3 bolas", "en": "3 scoops", "fr": "3 boules" } }
+      ],
+      "alergenos": null,
+      "dibujo": { "type": "scoops", "colors": ["#b98a62", "#fbf4ea", "#f4d9e0"], "n": 2, "sauce": "#c47a2a" }
+    },
+    {
+      "id": "batido-helado",
+      "seccion": "helados",
+      "nombre": { "es": "Batido helado", "en": "Ice cream milkshake", "fr": "Milk-shake glacé" },
+      "precios": [
+        { "precio": 4.2, "etiqueta": { "es": "Normal", "en": "Regular", "fr": "Normal" } },
+        { "precio": 4.7, "etiqueta": { "es": "Con nata", "en": "With cream", "fr": "Avec chantilly" } }
+      ],
+      "alergenos": null,
+      "dibujo": { "type": "glass", "colors": ["#e8a3b5", "#fbe3ea", "#c4566e"], "cream": true, "straw": "#e86e2a" }
+    },
+    {
+      "id": "frappe",
+      "seccion": "helados",
+      "nombre": { "es": "Frappé", "en": "Frappé", "fr": "Frappé" },
+      "precios": [{ "precio": 3.8 }],
+      "alergenos": null,
+      "dibujo": { "type": "glass", "colors": ["#a8784e", "#e9d3b4", "#6b3f22"], "cream": true, "straw": "#3a3c40" }
+    },
+    {
+      "id": "granizado",
+      "seccion": "helados",
+      "nombre": { "es": "Granizado", "en": "Slush", "fr": "Granité" },
+      "precios": [{ "precio": 2.2 }],
+      "alergenos": null,
+      "dibujo": { "type": "glass", "colors": ["#f4eb9a", "#fffbe0", "#e0d36a"], "crushed": true, "straw": "#e86e2a" }
+    },
+    {
+      "id": "refresco",
+      "seccion": "refrescos",
+      "nombre": { "es": "Refresco", "en": "Soft drink", "fr": "Soda" },
+      "precios": [{ "precio": 2 }],
+      "alergenos": null,
+      "dibujo": { "type": "can", "colors": ["#c8202a", "#f4f1ea"] }
+    },
+    {
+      "id": "nestea",
+      "seccion": "refrescos",
+      "nombre": { "es": "Nestea/Fuze Tea", "en": "Nestea/Fuze Tea", "fr": "Nestea/Fuze Tea" },
+      "descripcion": {
+        "es": "Sabores: limón o maracuyá.",
+        "en": "Flavours: lemon or passion fruit.",
+        "fr": "Parfums : citron ou fruit de la passion."
+      },
+      "precios": [{ "precio": 2.2 }],
+      "alergenos": null,
+      "opciones": [
+        {
+          "titulo": { "es": "Sabores", "en": "Flavours", "fr": "Parfums" },
+          "lista": { "es": ["Limón", "Maracuyá"], "en": ["Lemon", "Passion fruit"], "fr": ["Citron", "Fruit de la passion"] }
+        }
+      ],
+      "dibujo": { "type": "can", "colors": ["#c98a2a", "#f6e7b0"] }
+    },
+    {
+      "id": "redbull",
+      "seccion": "refrescos",
+      "nombre": { "es": "Red Bull", "en": "Red Bull", "fr": "Red Bull" },
+      "precios": [{ "precio": 2.5 }],
+      "alergenos": null,
+      "dibujo": { "type": "can", "colors": ["#24408f", "#d9dde4"] }
+    },
+    {
+      "id": "agua",
+      "seccion": "refrescos",
+      "nombre": { "es": "Agua mineral", "en": "Mineral water", "fr": "Eau minérale" },
+      "precios": [
+        { "precio": 1.2, "etiqueta": { "es": "Pequeña", "en": "Small", "fr": "Petit" } },
+        { "precio": 1.8, "etiqueta": { "es": "Grande", "en": "Large", "fr": "Grand" } }
+      ],
+      "alergenos": null,
+      "dibujo": { "type": "bottle", "colors": ["#cfe3ea", "#2a6fb5"] }
+    },
+    {
+      "id": "agua-gas",
+      "seccion": "refrescos",
+      "nombre": { "es": "Agua con gas", "en": "Sparkling water", "fr": "Eau gazeuse" },
+      "precios": [{ "precio": 2 }],
+      "alergenos": null,
+      "dibujo": { "type": "bottle", "colors": ["#cfe3ea", "#3a8a4a"], "bubbles": true }
+    },
+    {
+      "id": "biofrutas",
+      "seccion": "refrescos",
+      "nombre": { "es": "Biofrutas", "en": "Biofrutas", "fr": "Biofrutas" },
+      "descripcion": { "es": "", "en": "Fruit juice and milk drink.", "fr": "Boisson au jus de fruits et au lait." },
+      "precios": [{ "precio": 1.9 }],
+      "alergenos": null,
+      "dibujo": { "type": "bottle", "colors": ["#f3b07a", "#e86e2a"] }
+    },
+    {
+      "id": "zumo-bote",
+      "seccion": "refrescos",
+      "nombre": { "es": "Zumo de bote", "en": "Bottled juice", "fr": "Jus en bouteille" },
+      "precios": [{ "precio": 1.7 }],
+      "alergenos": null,
+      "dibujo": { "type": "bottle", "colors": ["#f39a1e", "#f2c94c"] }
+    },
+    {
+      "id": "bitter",
+      "seccion": "refrescos",
+      "nombre": { "es": "Bitter Kas/tónica", "en": "Bitter Kas/tonic", "fr": "Bitter Kas/tonic" },
+      "precios": [{ "precio": 2 }],
+      "alergenos": null,
+      "dibujo": { "type": "bottle", "colors": ["#c0392b", "#d9dde4"], "crown": true }
+    },
+    {
+      "id": "aquarius",
+      "seccion": "refrescos",
+      "nombre": { "es": "Aquarius", "en": "Aquarius", "fr": "Aquarius" },
+      "precios": [{ "precio": 2.2 }],
+      "alergenos": null,
+      "dibujo": { "type": "can", "colors": ["#e8eef5", "#2a6fb5"] }
+    },
+    {
+      "id": "naranja",
+      "seccion": "refrescos",
+      "nombre": { "es": "Zumo de naranja natural", "en": "Fresh orange juice", "fr": "Jus d’orange pressé" },
+      "precios": [
+        { "precio": 2, "etiqueta": { "es": "Normal", "en": "Regular", "fr": "Normal" } },
+        { "precio": 3, "etiqueta": { "es": "Grande", "en": "Large", "fr": "Grand" } }
+      ],
+      "alergenos": null,
+      "dibujo": { "type": "glass", "colors": ["#f39a1e", "#ffd27a", "#e07b12"], "slice": true }
+    },
+    {
+      "id": "batido",
+      "seccion": "refrescos",
+      "nombre": { "es": "Batido", "en": "Milkshake", "fr": "Milk-shake" },
+      "precios": [{ "precio": 1.7 }],
+      "alergenos": null,
+      "dibujo": { "type": "bottle", "colors": ["#e9d3b4", "#7a4a2a"] }
+    },
+    {
+      "id": "barril",
+      "seccion": "copas",
+      "grupo": { "es": "Cervezas", "en": "Beer", "fr": "Bières" },
+      "nombre": { "es": "Cerveza de barril", "en": "Draught beer", "fr": "Bière pression" },
+      "precios": [
+        { "precio": 1.6, "etiqueta": { "es": "Normal", "en": "Regular", "fr": "Normal" } },
+        { "precio": 3.3, "etiqueta": { "es": "Jarra", "en": "Large mug", "fr": "Chope" } }
+      ],
+      "alergenos": null,
+      "dibujo": { "type": "glass", "colors": ["#e9a92e", "#f8f0de", "#d4901f"], "foam": true }
+    },
+    {
+      "id": "sin-alcohol",
+      "seccion": "copas",
+      "grupo": { "es": "Cervezas", "en": "Beer", "fr": "Bières" },
+      "nombre": { "es": "Cerveza sin alcohol", "en": "Alcohol-free beer", "fr": "Bière sans alcool" },
+      "precios": [{ "precio": 1.6 }],
+      "alergenos": null,
+      "dibujo": { "type": "bottle", "colors": ["#8a5a1e", "#2a6fb5"], "crown": true }
+    },
+    {
+      "id": "tercio",
+      "seccion": "copas",
+      "grupo": { "es": "Cervezas", "en": "Beer", "fr": "Bières" },
+      "nombre": { "es": "Tercio Cruzcampo", "en": "Cruzcampo, large bottle", "fr": "Cruzcampo, 33 cl" },
+      "precios": [{ "precio": 2.5 }],
+      "alergenos": null,
+      "dibujo": { "type": "bottle", "colors": ["#8a5a1e", "#c8202a"], "crown": true }
+    },
+    {
+      "id": "cruz-sg",
+      "seccion": "copas",
+      "grupo": { "es": "Cervezas", "en": "Beer", "fr": "Bières" },
+      "nombre": { "es": "Cruzcampo sin gluten", "en": "Gluten-free Cruzcampo", "fr": "Cruzcampo sans gluten" },
+      "precios": [{ "precio": 2.6 }],
+      "alergenos": null,
+      "dibujo": { "type": "bottle", "colors": ["#8a5a1e", "#3a8a4a"], "crown": true }
+    },
+    {
+      "id": "b1906",
+      "seccion": "copas",
+      "grupo": { "es": "Cervezas", "en": "Beer", "fr": "Bières" },
+      "nombre": { "es": "1906 / 1904", "en": "1906 / 1904", "fr": "1906 / 1904" },
+      "precios": [{ "precio": 2.8 }],
+      "alergenos": null,
+      "dibujo": { "type": "bottle", "colors": ["#6a3e14", "#b3243a"], "crown": true }
+    },
+    {
+      "id": "botellin",
+      "seccion": "copas",
+      "grupo": { "es": "Cervezas", "en": "Beer", "fr": "Bières" },
+      "nombre": { "es": "Botellín", "en": "Small bottled beer", "fr": "Petite bière en bouteille" },
+      "precios": [{ "precio": 1.3 }],
+      "alergenos": null,
+      "dibujo": { "type": "bottle", "colors": ["#8a5a1e", "#c8202a"], "crown": true }
+    },
+    {
+      "id": "heineken",
+      "seccion": "copas",
+      "grupo": { "es": "Cervezas", "en": "Beer", "fr": "Bières" },
+      "nombre": { "es": "Heineken", "en": "Heineken", "fr": "Heineken" },
+      "precios": [{ "precio": 2.8 }],
+      "alergenos": null,
+      "dibujo": { "type": "bottle", "colors": ["#2f6b2f", "#c8202a"], "crown": true }
+    },
+    {
+      "id": "heineken00",
+      "seccion": "copas",
+      "grupo": { "es": "Cervezas", "en": "Beer", "fr": "Bières" },
+      "nombre": { "es": "Heineken 0,0", "en": "Heineken 0.0", "fr": "Heineken 0,0" },
+      "precios": [{ "precio": 2.8 }],
+      "alergenos": null,
+      "dibujo": { "type": "bottle", "colors": ["#2f6b2f", "#2a6fb5"], "crown": true }
+    },
+    {
+      "id": "coronita",
+      "seccion": "copas",
+      "grupo": { "es": "Cervezas", "en": "Beer", "fr": "Bières" },
+      "nombre": { "es": "Coronita", "en": "Coronita", "fr": "Coronita" },
+      "precios": [{ "precio": 2.8 }],
+      "alergenos": null,
+      "dibujo": { "type": "bottle", "colors": ["#e9dca0", "#e0c040"], "crown": true, "lime": true }
+    },
+    {
+      "id": "radler",
+      "seccion": "copas",
+      "grupo": { "es": "Cervezas", "en": "Beer", "fr": "Bières" },
+      "nombre": { "es": "Radler", "en": "Radler", "fr": "Radler" },
+      "precios": [{ "precio": 2.5 }],
+      "alergenos": null,
+      "dibujo": { "type": "can", "colors": ["#e8c23a", "#f6f1e4"] }
+    },
+    {
+      "id": "gran-reserva",
+      "seccion": "copas",
+      "grupo": { "es": "Cervezas", "en": "Beer", "fr": "Bières" },
+      "nombre": { "es": "Gran Reserva", "en": "Gran Reserva", "fr": "Gran Reserva" },
+      "precios": [{ "precio": 3 }],
+      "alergenos": null,
+      "dibujo": { "type": "bottle", "colors": ["#5a3410", "#b08d3a"], "crown": true }
+    },
+    {
+      "id": "desperados",
+      "seccion": "copas",
+      "grupo": { "es": "Cervezas", "en": "Beer", "fr": "Bières" },
+      "nombre": { "es": "Desperados", "en": "Desperados", "fr": "Desperados" },
+      "precios": [{ "precio": 3 }],
+      "alergenos": null,
+      "dibujo": { "type": "bottle", "colors": ["#e3d7a6", "#e0c040"], "crown": true }
+    },
+    {
+      "id": "paulaner",
+      "seccion": "copas",
+      "grupo": { "es": "Cervezas", "en": "Beer", "fr": "Bières" },
+      "nombre": { "es": "Paulaner", "en": "Paulaner", "fr": "Paulaner" },
+      "precios": [{ "precio": 3.5 }],
+      "alergenos": null,
+      "dibujo": { "type": "glass", "colors": ["#e8a92e", "#fbf3df", "#d08a1a"], "foam": true }
+    },
+    {
+      "id": "guinness",
+      "seccion": "copas",
+      "grupo": { "es": "Cervezas", "en": "Beer", "fr": "Bières" },
+      "nombre": { "es": "Guinness", "en": "Guinness", "fr": "Guinness" },
+      "precios": [{ "precio": 3.5 }],
+      "alergenos": null,
+      "dibujo": { "type": "glass", "colors": ["#1c120c", "#efe2c4", "#0e0805"], "foam": true }
+    },
+    {
+      "id": "tinto-casera",
+      "seccion": "copas",
+      "grupo": { "es": "Vinos", "en": "Wine", "fr": "Vins" },
+      "nombre": { "es": "Tinto con La Casera", "en": "Red wine with La Casera", "fr": "Vin rouge et La Casera" },
+      "descripcion": { "es": "", "en": "Red wine with lemon soda.", "fr": "Vin rouge coupé à la limonade." },
+      "precios": [{ "precio": 2.5 }],
+      "alergenos": null,
+      "dibujo": { "type": "glass", "colors": ["#7a1f2a", "#c0392b", "#f4e98a"], "ice": true, "slice": true }
+    },
+    {
+      "id": "rioja",
+      "seccion": "copas",
+      "grupo": { "es": "Vinos", "en": "Wine", "fr": "Vins" },
+      "nombre": { "es": "Copa de Rioja", "en": "Glass of Rioja", "fr": "Verre de Rioja" },
+      "precios": [{ "precio": 2.4 }],
+      "alergenos": null,
+      "dibujo": { "type": "glass", "colors": ["#5a0f1f", "#8a1f33", "#3a0812"], "stem": true }
+    },
+    {
+      "id": "blanco",
+      "seccion": "copas",
+      "grupo": { "es": "Vinos", "en": "Wine", "fr": "Vins" },
+      "nombre": { "es": "Copa de vino blanco", "en": "Glass of white wine", "fr": "Verre de vin blanc" },
+      "precios": [{ "precio": 2.4 }],
+      "alergenos": null,
+      "dibujo": { "type": "glass", "colors": ["#efe2a0", "#fff8d8", "#d9c46a"], "stem": true }
+    },
+    {
+      "id": "ribera",
+      "seccion": "copas",
+      "grupo": { "es": "Vinos", "en": "Wine", "fr": "Vins" },
+      "nombre": { "es": "Copa de Ribera", "en": "Glass of Ribera", "fr": "Verre de Ribera" },
+      "precios": [{ "precio": 2.4 }],
+      "alergenos": null,
+      "dibujo": { "type": "glass", "colors": ["#4a0c1a", "#7a1a2e", "#2a0610"], "stem": true }
+    },
+    {
+      "id": "canasta",
+      "seccion": "copas",
+      "grupo": { "es": "Vinos", "en": "Wine", "fr": "Vins" },
+      "nombre": { "es": "Copa de Canasta", "en": "Glass of Canasta", "fr": "Verre de Canasta" },
+      "descripcion": { "es": "", "en": "Cream sherry.", "fr": "Xérès doux (cream)." },
+      "precios": [{ "precio": 2.5 }],
+      "alergenos": null,
+      "dibujo": { "type": "glass", "colors": ["#6a3412", "#a0602a", "#3a1806"], "stem": true }
+    },
+    {
+      "id": "manzanilla",
+      "seccion": "copas",
+      "grupo": { "es": "Vinos", "en": "Wine", "fr": "Vins" },
+      "nombre": { "es": "Copa de manzanilla", "en": "Glass of manzanilla", "fr": "Verre de manzanilla" },
+      "descripcion": { "es": "", "en": "Dry sherry from Sanlúcar.", "fr": "Xérès sec de Sanlúcar." },
+      "precios": [{ "precio": 1.9 }],
+      "alergenos": null,
+      "dibujo": { "type": "glass", "colors": ["#ecd68a", "#fff6d0", "#d8bd5a"], "stem": true }
+    },
+    {
+      "id": "chupito",
+      "seccion": "copas",
+      "grupo": { "es": "Licores y combinados", "en": "Spirits & mixed drinks", "fr": "Alcools et long drinks" },
+      "nombre": { "es": "Chupito", "en": "Shot", "fr": "Shot" },
+      "precios": [
+        { "precio": 2.5, "etiqueta": { "es": "Normal", "en": "Regular", "fr": "Normal" } },
+        { "precio": 3.5, "etiqueta": { "es": "Premium", "en": "Premium", "fr": "Premium" } }
+      ],
+      "alergenos": null,
+      "dibujo": { "type": "glass", "colors": ["#c88a2a", "#f0c060", "#8a5a10"], "small": true }
+    },
+    {
+      "id": "licor",
+      "seccion": "copas",
+      "grupo": { "es": "Licores y combinados", "en": "Spirits & mixed drinks", "fr": "Alcools et long drinks" },
+      "nombre": { "es": "Copa de licor", "en": "Glass of liqueur", "fr": "Verre de liqueur" },
+      "precios": [{ "precio": 4.5 }],
+      "alergenos": null,
+      "dibujo": { "type": "glass", "colors": ["#b8432a", "#e8823a", "#7a2a14"], "ice": true }
+    },
+    {
+      "id": "baileys",
+      "seccion": "copas",
+      "grupo": { "es": "Licores y combinados", "en": "Spirits & mixed drinks", "fr": "Alcools et long drinks" },
+      "nombre": { "es": "Copa de Baileys", "en": "Glass of Baileys", "fr": "Verre de Baileys" },
+      "precios": [{ "precio": 4.5 }],
+      "alergenos": null,
+      "dibujo": { "type": "glass", "colors": ["#b98a62", "#e9d3b4", "#7a5a3e"], "ice": true }
+    },
+    {
+      "id": "martini",
+      "seccion": "copas",
+      "grupo": { "es": "Licores y combinados", "en": "Spirits & mixed drinks", "fr": "Alcools et long drinks" },
+      "nombre": { "es": "Copa de Martini", "en": "Glass of Martini", "fr": "Verre de Martini" },
+      "precios": [{ "precio": 4.5 }],
+      "alergenos": null,
+      "dibujo": { "type": "glass", "colors": ["#a8202a", "#d84a3a", "#f39a1e"], "ice": true, "slice": true, "stem": true }
+    },
+    {
+      "id": "solo",
+      "seccion": "copas",
+      "grupo": { "es": "Licores y combinados", "en": "Spirits & mixed drinks", "fr": "Alcools et long drinks" },
+      "nombre": {
+        "es": "Whisky, ron, ginebra o vodka solo",
+        "en": "Whisky, rum, gin or vodka, neat",
+        "fr": "Whisky, rhum, gin ou vodka, sec"
+      },
+      "precios": [
+        { "precio": 5, "etiqueta": { "es": "Normal", "en": "Regular", "fr": "Normal" } },
+        { "precio": 6.5, "etiqueta": { "es": "Premium", "en": "Premium", "fr": "Premium" } }
+      ],
+      "alergenos": null,
+      "dibujo": { "type": "glass", "colors": ["#b5722a", "#e0a050", "#7a4a14"], "ice": true }
+    },
+    {
+      "id": "combinado",
+      "seccion": "copas",
+      "grupo": { "es": "Licores y combinados", "en": "Spirits & mixed drinks", "fr": "Alcools et long drinks" },
+      "nombre": {
+        "es": "Combinado de whisky, ron, ginebra o vodka",
+        "en": "Whisky, rum, gin or vodka with a mixer",
+        "fr": "Whisky, rhum, gin ou vodka, allongé"
+      },
+      "precios": [
+        { "precio": 6.5, "etiqueta": { "es": "Normal", "en": "Regular", "fr": "Normal" } },
+        { "precio": 9, "etiqueta": { "es": "Premium", "en": "Premium", "fr": "Premium" } }
+      ],
+      "alergenos": null,
+      "dibujo": { "type": "glass", "colors": ["#dfe6e2", "#ffffff", "#b9cf4a"], "ice": true, "slice": true, "straw": "#3a3c40" }
+    },
+    {
+      "id": "ens-cesar",
+      "seccion": "picar",
+      "grupo": { "es": "Ensaladas", "en": "Salads", "fr": "Salades" },
+      "nombre": { "es": "Ensalada César", "en": "Caesar salad", "fr": "Salade César" },
+      "descripcion": {
+        "es": "Lechuga, pollo, picatostes, cheddar y salsa César.",
+        "en": "Lettuce, chicken, croutons, cheddar and Caesar dressing.",
+        "fr": "Laitue, poulet, croûtons, cheddar et sauce César."
+      },
+      "precios": [{ "precio": 8 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "salad", "top": ["chicken", "crouton", "cheddar", "dressing"] }
+    },
+    {
+      "id": "ens-fresca",
+      "seccion": "picar",
+      "grupo": { "es": "Ensaladas", "en": "Salads", "fr": "Salades" },
+      "nombre": { "es": "Ensalada fresca", "en": "Fresh salad", "fr": "Salade fraîcheur" },
+      "descripcion": {
+        "es": "Corazón de lechuga, queso fresco, pollo, nueces, ciruelas secas, pimienta, aceite de oliva y vinagre de Módena.",
+        "en": "Lettuce hearts, fresh cheese, chicken, walnuts, prunes, pepper, olive oil and balsamic vinegar of Modena.",
+        "fr": "Cœurs de laitue, fromage frais, poulet, noix, pruneaux, poivre, huile d’olive et vinaigre balsamique de Modène."
+      },
+      "precios": [{ "precio": 8 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "salad", "top": ["cheese", "chicken", "walnut", "prune", "balsamic"] }
+    },
+    {
+      "id": "ens-aguacate",
+      "seccion": "picar",
+      "grupo": { "es": "Ensaladas", "en": "Salads", "fr": "Salades" },
+      "nombre": { "es": "Ensalada de aguacate", "en": "Avocado salad", "fr": "Salade d’avocat" },
+      "descripcion": {
+        "es": "Lechuga, aguacate, nueces, pasas, aceite, vinagre de Pedro Ximénez y un toque de limón.",
+        "en": "Lettuce, avocado, walnuts, raisins, olive oil, Pedro Ximénez vinegar and a touch of lemon.",
+        "fr": "Laitue, avocat, noix, raisins secs, huile d’olive, vinaigre de Pedro Ximénez et une touche de citron."
+      },
+      "precios": [{ "precio": 8 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "salad", "top": ["avocado", "walnut", "raisin", "lemon"] }
+    },
+    {
+      "id": "jamon",
+      "seccion": "picar",
+      "grupo": { "es": "Tapas y raciones", "en": "Tapas & portions", "fr": "Tapas et assiettes" },
+      "nombre": { "es": "Jamón ibérico", "en": "Iberian ham", "fr": "Jambon ibérique" },
+      "precios": [
+        { "precio": 4.5, "etiqueta": { "es": "Tapa", "en": "Tapa", "fr": "Tapa" } },
+        { "precio": 11, "etiqueta": { "es": "Ración", "en": "Portion", "fr": "Assiette" } }
+      ],
+      "alergenos": [],
+      "dibujo": { "type": "board", "kind": "slices", "colors": ["#a8323a", "#f3dccf"] }
+    },
+    {
+      "id": "lomo",
+      "seccion": "picar",
+      "grupo": { "es": "Tapas y raciones", "en": "Tapas & portions", "fr": "Tapas et assiettes" },
+      "nombre": { "es": "Caña de lomo ibérico", "en": "Cured Iberian pork loin", "fr": "Lomo ibérique" },
+      "precios": [
+        { "precio": 4.5, "etiqueta": { "es": "Tapa", "en": "Tapa", "fr": "Tapa" } },
+        { "precio": 10, "etiqueta": { "es": "Ración", "en": "Portion", "fr": "Assiette" } }
+      ],
+      "alergenos": ["soy", "milk"],
+      "dibujo": { "type": "board", "kind": "rounds", "colors": ["#8a2626", "#f3dccf"] }
+    },
+    {
+      "id": "queso",
+      "seccion": "picar",
+      "grupo": { "es": "Tapas y raciones", "en": "Tapas & portions", "fr": "Tapas et assiettes" },
+      "nombre": { "es": "Queso viejo", "en": "Aged cheese", "fr": "Fromage affiné" },
+      "precios": [
+        { "precio": 4.5, "etiqueta": { "es": "Tapa", "en": "Tapa", "fr": "Tapa" } },
+        { "precio": 10, "etiqueta": { "es": "Ración", "en": "Portion", "fr": "Assiette" } }
+      ],
+      "alergenos": ["gluten", "eggs", "milk"],
+      "dibujo": { "type": "board", "kind": "wedges", "colors": ["#f1d27a", "#e9c895"] }
+    },
+    {
+      "id": "chicharron",
+      "seccion": "picar",
+      "grupo": { "es": "Tapas y raciones", "en": "Tapas & portions", "fr": "Tapas et assiettes" },
+      "nombre": { "es": "Chicharrón de Cádiz", "en": "Chicharrón de Cádiz", "fr": "Chicharrón de Cádiz" },
+      "descripcion": { "es": "", "en": "Cádiz-style pressed pork belly.", "fr": "Poitrine de porc pressée, spécialité de Cadix." },
+      "precios": [
+        { "precio": 4, "etiqueta": { "es": "Tapa", "en": "Tapa", "fr": "Tapa" } },
+        { "precio": 9.5, "etiqueta": { "es": "Ración", "en": "Portion", "fr": "Assiette" } }
+      ],
+      "alergenos": ["gluten", "sulphites"],
+      "dibujo": { "type": "board", "kind": "squares", "colors": ["#efc9b8", "#f8eee6"] }
+    },
+    {
+      "id": "surtido",
+      "seccion": "picar",
+      "grupo": { "es": "Tapas y raciones", "en": "Tapas & portions", "fr": "Tapas et assiettes" },
+      "nombre": { "es": "Surtido ibérico", "en": "Iberian platter", "fr": "Assortiment ibérique" },
+      "precios": [{ "precio": 12 }],
+      "alergenos": ["gluten", "soy", "milk"],
+      "dibujo": { "type": "board", "kind": "mixed", "colors": ["#a8323a", "#f3dccf", "#f1d27a"] }
+    },
+    {
+      "id": "ensaladilla",
+      "seccion": "picar",
+      "grupo": { "es": "Tapas y raciones", "en": "Tapas & portions", "fr": "Tapas et assiettes" },
+      "nombre": { "es": "Ensaladilla", "en": "Ensaladilla", "fr": "Ensaladilla" },
+      "descripcion": { "es": "", "en": "Spanish potato salad.", "fr": "Salade russe à l’espagnole." },
+      "precios": [
+        { "precio": 3.5, "etiqueta": { "es": "Tapa", "en": "Tapa", "fr": "Tapa" } },
+        { "precio": 9, "etiqueta": { "es": "Ración", "en": "Portion", "fr": "Assiette" } }
+      ],
+      "alergenos": [
+        "gluten",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "plate", "colors": ["#f2e2b0", "#e8a23a", "#c0392b"], "mound": true }
+    },
+    {
+      "id": "salmorejo",
+      "seccion": "picar",
+      "grupo": { "es": "Tapas y raciones", "en": "Tapas & portions", "fr": "Tapas et assiettes" },
+      "nombre": { "es": "Salmorejo", "en": "Salmorejo", "fr": "Salmorejo" },
+      "descripcion": { "es": "", "en": "Chilled tomato and bread cream.", "fr": "Crème froide de tomate et de pain." },
+      "precios": [
+        { "precio": 3.5, "etiqueta": { "es": "Tapa", "en": "Tapa", "fr": "Tapa" } },
+        { "precio": 6, "etiqueta": { "es": "Ración", "en": "Portion", "fr": "Assiette" } }
+      ],
+      "alergenos": ["gluten", "eggs", "sulphites"],
+      "dibujo": { "type": "bowl", "colors": ["#e0773e", "#a8323a", "#f6f1e4"] }
+    },
+    {
+      "id": "carne-tomate",
+      "seccion": "picar",
+      "grupo": { "es": "Tapas y raciones", "en": "Tapas & portions", "fr": "Tapas et assiettes" },
+      "nombre": { "es": "Carne con tomate", "en": "Meat in tomato sauce", "fr": "Viande à la sauce tomate" },
+      "precios": [{ "precio": 4, "etiqueta": { "es": "Tapa", "en": "Tapa", "fr": "Tapa" } }],
+      "alergenos": ["gluten", "eggs", "peanuts", "soy", "milk", "nuts", "celery", "mustard", "sesame", "sulphites", "lupin"],
+      "caliente": true,
+      "dibujo": { "type": "bowl", "colors": ["#c0392b", "#7a3a24", "#e8a23a"], "chunks": true }
+    },
+    {
+      "id": "mechada",
+      "seccion": "picar",
+      "grupo": { "es": "Tapas y raciones", "en": "Tapas & portions", "fr": "Tapas et assiettes" },
+      "nombre": { "es": "Carne mechada", "en": "Carne mechada", "fr": "Carne mechada" },
+      "descripcion": { "es": "", "en": "Andalusian stuffed roast meat.", "fr": "Rôti farci à l’andalouse." },
+      "precios": [
+        { "precio": 4, "etiqueta": { "es": "Tapa", "en": "Tapa", "fr": "Tapa" } },
+        { "precio": 10, "etiqueta": { "es": "Ración", "en": "Portion", "fr": "Assiette" } }
+      ],
+      "alergenos": ["gluten", "eggs", "peanuts", "soy", "milk", "nuts", "celery", "mustard", "sesame", "sulphites", "lupin"],
+      "dibujo": { "type": "board", "kind": "mechada", "colors": ["#8a4a2a", "#c9763a", "#5f8f3a"] }
+    },
+    {
+      "id": "caracoles",
+      "seccion": "picar",
+      "grupo": { "es": "Tapas y raciones", "en": "Tapas & portions", "fr": "Tapas et assiettes" },
+      "nombre": { "es": "Caracoles", "en": "Snails", "fr": "Escargots" },
+      "descripcion": { "es": "En temporada.", "en": "In season.", "fr": "En saison." },
+      "precios": [{ "precio": null }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "caliente": true,
+      "dibujo": { "type": "pieces", "shape": "snail", "colors": ["#8a6a4a", "#c9a87a", "#d9b56a"] }
+    },
+    {
+      "id": "tomate-alinado",
+      "seccion": "picar",
+      "grupo": { "es": "Tapas y raciones", "en": "Tapas & portions", "fr": "Tapas et assiettes" },
+      "nombre": { "es": "Tomate aliñado", "en": "Dressed tomato salad", "fr": "Tomates assaisonnées" },
+      "precios": [{ "precio": 7 }],
+      "alergenos": ["sulphites"],
+      "dibujo": { "type": "tomatoes" }
+    },
+    {
+      "id": "nachos",
+      "seccion": "picar",
+      "grupo": { "es": "Tapas y raciones", "en": "Tapas & portions", "fr": "Tapas et assiettes" },
+      "nombre": { "es": "Nachos con queso", "en": "Nachos with cheese", "fr": "Nachos au fromage" },
+      "precios": [{ "precio": 7 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "pieces", "shape": "nacho", "colors": ["#f0c040", "#f2a33a", "#5f8f3a"] }
+    },
+    {
+      "id": "pan-casa",
+      "seccion": "picar",
+      "grupo": { "es": "Tapas y raciones", "en": "Tapas & portions", "fr": "Tapas et assiettes" },
+      "nombre": { "es": "Pan de la casa", "en": "House bread", "fr": "Pain maison" },
+      "descripcion": {
+        "es": "Salmorejo, jamón ibérico y aceite.",
+        "en": "Salmorejo, Iberian ham and olive oil.",
+        "fr": "Salmorejo, jambon ibérique et huile d’olive."
+      },
+      "precios": [{ "precio": 10.5 }],
+      "alergenos": ["gluten", "eggs", "sulphites"],
+      "dibujo": { "type": "toast", "kind": "top", "top": ["salmorejo", "ham"], "big": true }
+    },
+    {
+      "id": "pollo-mostaza",
+      "seccion": "picar",
+      "grupo": { "es": "Tapas y raciones", "en": "Tapas & portions", "fr": "Tapas et assiettes" },
+      "nombre": {
+        "es": "Pollo a la mostaza antigua",
+        "en": "Chicken in wholegrain mustard",
+        "fr": "Poulet à la moutarde à l’ancienne"
+      },
+      "precios": [{ "precio": 5.5 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "caliente": true,
+      "dibujo": { "type": "plate", "colors": ["#e8c27a", "#d9a43a", "#c9a23a"] }
+    },
+    {
+      "id": "tortilla-borracha",
+      "seccion": "picar",
+      "grupo": { "es": "Tapas y raciones", "en": "Tapas & portions", "fr": "Tapas et assiettes" },
+      "nombre": { "es": "Tortilla borracha", "en": "Tortilla borracha", "fr": "Tortilla borracha" },
+      "descripcion": { "es": "", "en": "Potato omelette in sauce.", "fr": "Omelette aux pommes de terre en sauce." },
+      "precios": [{ "precio": 4 }],
+      "alergenos": ["gluten", "eggs", "peanuts", "soy", "milk", "nuts", "celery", "mustard", "sesame", "sulphites", "lupin"],
+      "caliente": true,
+      "dibujo": { "type": "slice", "colors": ["#f0c75a", "#e4b23f", "#c47a2a"], "tortilla": true, "sauce": true }
+    },
+    {
+      "id": "berenjenas",
+      "seccion": "picar",
+      "grupo": { "es": "Tapas y raciones", "en": "Tapas & portions", "fr": "Tapas et assiettes" },
+      "nombre": { "es": "Berenjenas gratinadas", "en": "Aubergine gratin", "fr": "Aubergines gratinées" },
+      "precios": [{ "precio": 4.5 }],
+      "alergenos": ["gluten", "eggs", "peanuts", "soy", "milk", "nuts", "celery", "mustard", "sesame", "sulphites", "lupin"],
+      "caliente": true,
+      "dibujo": { "type": "gratin", "colors": ["#e8b860", "#5a2c4f"] }
+    },
+    {
+      "id": "lasana",
+      "seccion": "picar",
+      "grupo": { "es": "Tapas y raciones", "en": "Tapas & portions", "fr": "Tapas et assiettes" },
+      "nombre": { "es": "Lasaña", "en": "Lasagne", "fr": "Lasagnes" },
+      "precios": [{ "precio": 6 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "caliente": true,
+      "dibujo": { "type": "gratin", "colors": ["#e09a40", "#c0392b"] }
+    },
+    {
+      "id": "brocheta",
+      "seccion": "picar",
+      "grupo": { "es": "Tapas y raciones", "en": "Tapas & portions", "fr": "Tapas et assiettes" },
+      "nombre": { "es": "Brocheta de pollo", "en": "Chicken brochette", "fr": "Brochette de poulet" },
+      "precios": [{ "precio": 4.5 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "caliente": true,
+      "dibujo": { "type": "skewer", "colors": ["#e8b070", "#c0392b", "#5f8f3a"] }
+    },
+    {
+      "id": "rulo",
+      "seccion": "picar",
+      "grupo": { "es": "Tapas y raciones", "en": "Tapas & portions", "fr": "Tapas et assiettes" },
+      "nombre": { "es": "Rulo de cabra gratinado", "en": "Grilled goat’s cheese", "fr": "Chèvre gratiné" },
+      "precios": [{ "precio": 4.5 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "caliente": true,
+      "dibujo": { "type": "plate", "colors": ["#f6f1e4", "#b3243a", "#d9a03a"], "rounds": true }
+    },
+    {
+      "id": "hojaldre-curry",
+      "seccion": "picar",
+      "grupo": { "es": "Tapas y raciones", "en": "Tapas & portions", "fr": "Tapas et assiettes" },
+      "nombre": { "es": "Hojaldre al curry", "en": "Curry puff pastry", "fr": "Feuilleté au curry" },
+      "precios": [{ "precio": 4.5 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "caliente": true,
+      "dibujo": { "type": "toast", "kind": "pastry", "colors": ["#e0a24e", "#e8b83a", "#f1c27a"] }
+    },
+    {
+      "id": "hojaldre-setas",
+      "seccion": "picar",
+      "grupo": { "es": "Tapas y raciones", "en": "Tapas & portions", "fr": "Tapas et assiettes" },
+      "nombre": { "es": "Hojaldre de setas", "en": "Mushroom puff pastry", "fr": "Feuilleté aux champignons" },
+      "precios": [{ "precio": 4.5 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "caliente": true,
+      "dibujo": { "type": "toast", "kind": "pastry", "colors": ["#e0a24e", "#8a6a4a", "#f1c27a"] }
+    },
+    {
+      "id": "perrito",
+      "seccion": "picar",
+      "grupo": { "es": "Tapas y raciones", "en": "Tapas & portions", "fr": "Tapas et assiettes" },
+      "nombre": { "es": "Perrito caliente", "en": "Hot dog", "fr": "Hot-dog" },
+      "precios": [{ "precio": 4 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "caliente": true,
+      "dibujo": { "type": "toast", "kind": "hotdog", "colors": ["#e2b06a", "#b5452a", "#f2c94c"] }
+    },
+    {
+      "id": "pinchito",
+      "seccion": "picar",
+      "grupo": { "es": "Tapas y raciones", "en": "Tapas & portions", "fr": "Tapas et assiettes" },
+      "nombre": { "es": "Pinchito de pollo", "en": "Chicken pinchito", "fr": "Pinchito de poulet" },
+      "descripcion": { "es": "", "en": "Spiced chicken skewer.", "fr": "Brochette de poulet aux épices." },
+      "precios": [{ "precio": 4.5 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "caliente": true,
+      "dibujo": { "type": "skewer", "colors": ["#d9842a", "#a8452a", "#5f8f3a"] }
+    },
+    {
+      "id": "m-gamba",
+      "seccion": "montaditos",
+      "nombre": { "es": "Gamba y alioli", "en": "Prawn and aioli", "fr": "Crevette et aïoli" },
+      "precios": [{ "precio": 3.8 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "mini", "colors": ["#e2b06a", "#f08a6a", "#f6efd8"] }
+    },
+    {
+      "id": "m-palometa",
+      "seccion": "montaditos",
+      "nombre": {
+        "es": "Palometa con queso fresco",
+        "en": "Palometa fish with fresh cheese",
+        "fr": "Poisson palometa et fromage frais"
+      },
+      "precios": [{ "precio": 3.8 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "mini", "colors": ["#e2b06a", "#d9c2a8", "#f6f3ea"] }
+    },
+    {
+      "id": "m-anchoas",
+      "seccion": "montaditos",
+      "nombre": { "es": "Anchoas con queso fresco", "en": "Anchovies with fresh cheese", "fr": "Anchois et fromage frais" },
+      "precios": [{ "precio": 3.8 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "mini", "colors": ["#e2b06a", "#7a5a3e", "#f6f3ea"] }
+    },
+    {
+      "id": "m-jamon",
+      "seccion": "montaditos",
+      "nombre": { "es": "Jamón ibérico", "en": "Iberian ham", "fr": "Jambon ibérique" },
+      "precios": [{ "precio": 4.0 }],
+      "alergenos": ["gluten", "milk", "sulphites"],
+      "dibujo": { "type": "toast", "kind": "mini", "colors": ["#e2b06a", "#a8323a", "#f3dccf"] }
+    },
+    {
+      "id": "m-atun",
+      "seccion": "montaditos",
+      "nombre": { "es": "Atún con pimientos", "en": "Tuna with peppers", "fr": "Thon et poivrons" },
+      "precios": [{ "precio": 3.8 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "mini", "colors": ["#e2b06a", "#d9b98a", "#c8402c"] }
+    },
+    {
+      "id": "m-pringa",
+      "seccion": "montaditos",
+      "nombre": { "es": "Pringá", "en": "Pringá", "fr": "Pringá" },
+      "descripcion": { "es": "", "en": "Slow-cooked stew meats.", "fr": "Viandes de pot-au-feu effilochées." },
+      "precios": [{ "precio": 3.8 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "mini", "colors": ["#e2b06a", "#7a3a24", "#c9763a"] }
+    },
+    {
+      "id": "m-lomo",
+      "seccion": "montaditos",
+      "nombre": { "es": "Caña de lomo", "en": "Cured pork loin", "fr": "Lomo séché" },
+      "precios": [{ "precio": 3.8 }],
+      "alergenos": ["gluten", "milk", "sulphites"],
+      "dibujo": { "type": "toast", "kind": "mini", "colors": ["#e2b06a", "#8a2626", "#f3dccf"] }
+    },
+    {
+      "id": "m-chorizo",
+      "seccion": "montaditos",
+      "nombre": { "es": "Chorizo picante", "en": "Spicy chorizo", "fr": "Chorizo piquant" },
+      "precios": [{ "precio": 3.8 }],
+      "alergenos": ["gluten", "milk", "sulphites"],
+      "etiquetas": ["spicy"],
+      "dibujo": { "type": "toast", "kind": "mini", "colors": ["#e2b06a", "#b3302a", "#e8823a"] }
+    },
+    {
+      "id": "m-pollo-jamon",
+      "seccion": "montaditos",
+      "nombre": { "es": "Pollo con jamón", "en": "Chicken with ham", "fr": "Poulet et jambon" },
+      "precios": [{ "precio": 3.8 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "mini", "colors": ["#e2b06a", "#e8c79a", "#a8323a"] }
+    },
+    {
+      "id": "m-queso",
+      "seccion": "montaditos",
+      "nombre": { "es": "Queso viejo", "en": "Aged cheese", "fr": "Fromage affiné" },
+      "precios": [{ "precio": 3.8 }],
+      "alergenos": ["gluten", "eggs", "milk", "sulphites"],
+      "dibujo": { "type": "toast", "kind": "mini", "colors": ["#e2b06a", "#f1d27a", "#e9c895"] }
+    },
+    {
+      "id": "m-chicharron",
+      "seccion": "montaditos",
+      "nombre": { "es": "Chicharrón de Cádiz", "en": "Chicharrón de Cádiz", "fr": "Chicharrón de Cádiz" },
+      "precios": [{ "precio": 3.8 }],
+      "alergenos": ["gluten", "eggs", "milk", "sulphites"],
+      "dibujo": { "type": "toast", "kind": "mini", "colors": ["#e2b06a", "#efc9b8", "#f8eee6"] }
+    },
+    {
+      "id": "m-jamon-salmorejo",
+      "seccion": "montaditos",
+      "nombre": { "es": "Jamón con salmorejo", "en": "Ham with salmorejo", "fr": "Jambon et salmorejo" },
+      "precios": [{ "precio": 4 }],
+      "alergenos": ["gluten", "eggs", "milk", "sulphites"],
+      "dibujo": { "type": "toast", "kind": "mini", "colors": ["#e2b06a", "#e0773e", "#a8323a"] }
+    },
+    {
+      "id": "m-jamon-roquefort",
+      "seccion": "montaditos",
+      "nombre": { "es": "Jamón con roquefort", "en": "Ham with Roquefort", "fr": "Jambon et roquefort" },
+      "precios": [{ "precio": 4 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "mini", "colors": ["#e2b06a", "#a8323a", "#dfe2d8"] }
+    },
+    {
+      "id": "m-queso-jamon",
+      "seccion": "montaditos",
+      "nombre": {
+        "es": "Queso viejo con jamón ibérico",
+        "en": "Aged cheese with Iberian ham",
+        "fr": "Fromage affiné et jambon ibérique"
+      },
+      "precios": [{ "precio": 3.8 }],
+      "alergenos": ["gluten", "eggs", "milk", "sulphites"],
+      "dibujo": { "type": "toast", "kind": "mini", "colors": ["#e2b06a", "#f1d27a", "#a8323a"] }
+    },
+    {
+      "id": "m-mechada",
+      "seccion": "montaditos",
+      "nombre": { "es": "Carne mechada", "en": "Carne mechada", "fr": "Carne mechada" },
+      "precios": [{ "precio": 3.8 }],
+      "alergenos": ["gluten", "eggs", "milk", "sulphites"],
+      "dibujo": { "type": "toast", "kind": "mini", "colors": ["#e2b06a", "#8a4a2a", "#c9763a"] }
+    },
+    {
+      "id": "m-mechada-viejo",
+      "seccion": "montaditos",
+      "nombre": {
+        "es": "Carne mechada con queso viejo",
+        "en": "Carne mechada with aged cheese",
+        "fr": "Carne mechada et fromage affiné"
+      },
+      "precios": [{ "precio": 3.8 }],
+      "alergenos": ["gluten", "eggs", "milk", "sulphites"],
+      "dibujo": { "type": "toast", "kind": "mini", "colors": ["#e2b06a", "#8a4a2a", "#f1d27a"] }
+    },
+    {
+      "id": "m-mechada-cheddar",
+      "seccion": "montaditos",
+      "nombre": {
+        "es": "Carne mechada con queso cheddar",
+        "en": "Carne mechada with cheddar",
+        "fr": "Carne mechada et cheddar"
+      },
+      "precios": [{ "precio": 3.8 }],
+      "alergenos": ["gluten", "eggs", "peanuts", "soy", "milk", "nuts", "celery", "mustard", "sesame", "sulphites", "lupin"],
+      "dibujo": { "type": "toast", "kind": "mini", "colors": ["#e2b06a", "#8a4a2a", "#f0a030"] }
+    },
+    {
+      "id": "m-lomo-jamon",
+      "seccion": "montaditos",
+      "nombre": { "es": "Lomo con jamón", "en": "Pork loin with ham", "fr": "Filet de porc et jambon" },
+      "precios": [{ "precio": 3.8 }],
+      "alergenos": ["gluten", "eggs", "milk", "sulphites"],
+      "dibujo": { "type": "toast", "kind": "mini", "colors": ["#e2b06a", "#c99a72", "#a8323a"] }
+    },
+    {
+      "id": "m-chorizo-queso",
+      "seccion": "montaditos",
+      "nombre": { "es": "Chorizo y queso", "en": "Chorizo and cheese", "fr": "Chorizo et fromage" },
+      "precios": [{ "precio": 3.8 }],
+      "alergenos": ["gluten", "eggs", "milk", "sulphites"],
+      "dibujo": { "type": "toast", "kind": "mini", "colors": ["#e2b06a", "#b3302a", "#f1d27a"] }
+    },
+    {
+      "id": "s-super",
+      "seccion": "bocadillos",
+      "grupo": { "es": "Sándwiches", "en": "Sandwiches", "fr": "Sandwichs" },
+      "nombre": { "es": "Sándwich súper", "en": "Super sandwich", "fr": "Sandwich super" },
+      "descripcion": {
+        "es": "Lechuga, mahonesa, atún, york, huevo y tomate.",
+        "en": "Lettuce, mayonnaise, tuna, cooked ham, egg and tomato.",
+        "fr": "Laitue, mayonnaise, thon, jambon blanc, œuf et tomate."
+      },
+      "precios": [{ "precio": 5 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "mixto", "colors": ["#efd3a2", "#7fa04a", "#e9a3a3"] }
+    },
+    {
+      "id": "s-vegetal",
+      "seccion": "bocadillos",
+      "grupo": { "es": "Sándwiches", "en": "Sandwiches", "fr": "Sandwichs" },
+      "nombre": { "es": "Sándwich vegetal", "en": "Vegetal sandwich", "fr": "Sandwich crudités" },
+      "descripcion": {
+        "es": "York, lechuga, huevo, tomate y mahonesa.",
+        "en": "Cooked ham, lettuce, egg, tomato and mayonnaise.",
+        "fr": "Jambon blanc, laitue, œuf, tomate et mayonnaise."
+      },
+      "precios": [{ "precio": 3.7 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "mixto", "colors": ["#efd3a2", "#7fa04a", "#f2c94c"] }
+    },
+    {
+      "id": "s-atun",
+      "seccion": "bocadillos",
+      "grupo": { "es": "Sándwiches", "en": "Sandwiches", "fr": "Sandwichs" },
+      "nombre": { "es": "Sándwich de atún", "en": "Tuna sandwich", "fr": "Sandwich au thon" },
+      "descripcion": {
+        "es": "Atún, lechuga, tomate y mahonesa.",
+        "en": "Tuna, lettuce, tomato and mayonnaise.",
+        "fr": "Thon, laitue, tomate et mayonnaise."
+      },
+      "precios": [{ "precio": 3.7 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "mixto", "colors": ["#efd3a2", "#d9b98a", "#7fa04a"] }
+    },
+    {
+      "id": "s-pollo",
+      "seccion": "bocadillos",
+      "grupo": { "es": "Sándwiches", "en": "Sandwiches", "fr": "Sandwichs" },
+      "nombre": { "es": "Sándwich de pollo", "en": "Chicken sandwich", "fr": "Sandwich au poulet" },
+      "descripcion": {
+        "es": "Pollo, lechuga, tomate y mahonesa.",
+        "en": "Chicken, lettuce, tomato and mayonnaise.",
+        "fr": "Poulet, laitue, tomate et mayonnaise."
+      },
+      "precios": [{ "precio": 4.4 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "mixto", "colors": ["#efd3a2", "#e8c79a", "#7fa04a"] }
+    },
+    {
+      "id": "s-mixto",
+      "seccion": "bocadillos",
+      "grupo": { "es": "Sándwiches", "en": "Sandwiches", "fr": "Sandwichs" },
+      "nombre": { "es": "Sándwich mixto", "en": "Ham & cheese toastie", "fr": "Croque-monsieur" },
+      "descripcion": { "es": "York y queso.", "en": "Cooked ham and cheese.", "fr": "Jambon blanc et fromage." },
+      "precios": [{ "precio": 3 }],
+      "alergenos": ["gluten", "eggs", "peanuts", "soy", "milk", "nuts", "celery", "mustard", "sesame", "sulphites", "lupin"],
+      "caliente": true,
+      "dibujo": { "type": "toast", "kind": "mixto", "colors": ["#e8bd7a", "#f2c94c", "#e9a3a3"] }
+    },
+    {
+      "id": "s-bacon",
+      "seccion": "bocadillos",
+      "grupo": { "es": "Sándwiches", "en": "Sandwiches", "fr": "Sandwichs" },
+      "nombre": { "es": "Sándwich bacon", "en": "Bacon sandwich", "fr": "Sandwich bacon" },
+      "descripcion": {
+        "es": "Bacon, mahonesa, lechuga, cheddar, york, tomate y huevo.",
+        "en": "Bacon, mayonnaise, lettuce, cheddar, cooked ham, tomato and egg.",
+        "fr": "Bacon, mayonnaise, laitue, cheddar, jambon blanc, tomate et œuf."
+      },
+      "precios": [{ "precio": 4.4 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "mixto", "colors": ["#efd3a2", "#b5452a", "#f0a030"] }
+    },
+    {
+      "id": "s-cheddar",
+      "seccion": "bocadillos",
+      "grupo": { "es": "Sándwiches", "en": "Sandwiches", "fr": "Sandwichs" },
+      "nombre": { "es": "Sándwich cheddar", "en": "Cheddar sandwich", "fr": "Sandwich cheddar" },
+      "descripcion": { "es": "Pollo, bacon y cheddar.", "en": "Chicken, bacon and cheddar.", "fr": "Poulet, bacon et cheddar." },
+      "precios": [{ "precio": 4.4 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "caliente": true,
+      "dibujo": { "type": "toast", "kind": "mixto", "colors": ["#efd3a2", "#f0a030", "#b5452a"] }
+    },
+    {
+      "id": "b-lomo-queso",
+      "seccion": "bocadillos",
+      "grupo": { "es": "Baguettes", "en": "Baguettes", "fr": "Baguettes" },
+      "nombre": {
+        "es": "Lomo, queso y salsa de cebolla",
+        "en": "Pork loin, cheese and onion sauce",
+        "fr": "Filet de porc, fromage et sauce à l’oignon"
+      },
+      "precios": [{ "precio": 5.2 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "caliente": true,
+      "dibujo": { "type": "toast", "kind": "baguette", "colors": ["#d9a05a", "#c99a72", "#f1d27a"] }
+    },
+    {
+      "id": "b-pollo-bacon",
+      "seccion": "bocadillos",
+      "grupo": { "es": "Baguettes", "en": "Baguettes", "fr": "Baguettes" },
+      "nombre": { "es": "Pollo y bacon", "en": "Chicken and bacon", "fr": "Poulet et bacon" },
+      "precios": [{ "precio": 5.2 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "caliente": true,
+      "dibujo": { "type": "toast", "kind": "baguette", "colors": ["#d9a05a", "#e8c79a", "#b5452a"] }
+    },
+    {
+      "id": "b-pollo-salsa",
+      "seccion": "bocadillos",
+      "grupo": { "es": "Baguettes", "en": "Baguettes", "fr": "Baguettes" },
+      "nombre": { "es": "Pollo en salsa", "en": "Chicken in sauce", "fr": "Poulet en sauce" },
+      "precios": [{ "precio": 5.2 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "caliente": true,
+      "dibujo": { "type": "toast", "kind": "baguette", "colors": ["#d9a05a", "#e8c79a", "#c47a2a"] }
+    },
+    {
+      "id": "b-serranito",
+      "seccion": "bocadillos",
+      "grupo": { "es": "Baguettes", "en": "Baguettes", "fr": "Baguettes" },
+      "nombre": { "es": "Serranito", "en": "Serranito", "fr": "Serranito" },
+      "descripcion": { "es": "", "en": "The Andalusian classic.", "fr": "Le grand classique andalou." },
+      "precios": [{ "precio": 5.2 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "caliente": true,
+      "dibujo": { "type": "toast", "kind": "baguette", "colors": ["#d9a05a", "#c99a72", "#5f8f3a"] }
+    },
+    {
+      "id": "b-kebab",
+      "seccion": "bocadillos",
+      "grupo": { "es": "Baguettes", "en": "Baguettes", "fr": "Baguettes" },
+      "nombre": { "es": "Kebab", "en": "Kebab", "fr": "Kebab" },
+      "precios": [{ "precio": 5.2 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "caliente": true,
+      "dibujo": { "type": "toast", "kind": "baguette", "colors": ["#d9a05a", "#a8622a", "#7fa04a"] }
+    },
+    {
+      "id": "b-lomo-whisky",
+      "seccion": "bocadillos",
+      "grupo": { "es": "Baguettes", "en": "Baguettes", "fr": "Baguettes" },
+      "nombre": { "es": "Lomo al whisky", "en": "Pork loin in whisky sauce", "fr": "Filet de porc au whisky" },
+      "precios": [{ "precio": 5.2 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "caliente": true,
+      "dibujo": { "type": "toast", "kind": "baguette", "colors": ["#d9a05a", "#c99a72", "#d9a03a"] }
+    },
+    {
+      "id": "bo-pringa",
+      "seccion": "bocadillos",
+      "grupo": { "es": "Bocadillos", "en": "Rolls", "fr": "Bocadillos" },
+      "nombre": { "es": "Pringá", "en": "Pringá", "fr": "Pringá" },
+      "descripcion": { "es": "", "en": "Slow-cooked stew meats.", "fr": "Viandes de pot-au-feu effilochées." },
+      "precios": [{ "precio": 5.2 }],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "baguette", "colors": ["#e0a85e", "#7a3a24", "#c9763a"] }
+    },
+    {
+      "id": "bo-chicharron",
+      "seccion": "bocadillos",
+      "grupo": { "es": "Bocadillos", "en": "Rolls", "fr": "Bocadillos" },
+      "nombre": { "es": "Chicharrón de Cádiz", "en": "Chicharrón de Cádiz", "fr": "Chicharrón de Cádiz" },
+      "precios": [{ "precio": 5.2 }],
+      "alergenos": ["gluten", "eggs", "peanuts", "soy", "milk", "nuts", "celery", "mustard", "sesame", "sulphites", "lupin"],
+      "dibujo": { "type": "toast", "kind": "baguette", "colors": ["#e0a85e", "#efc9b8", "#f8eee6"] }
+    },
+    {
+      "id": "bo-chorizo",
+      "seccion": "bocadillos",
+      "grupo": { "es": "Bocadillos", "en": "Rolls", "fr": "Bocadillos" },
+      "nombre": { "es": "Chorizo ibérico", "en": "Iberian chorizo", "fr": "Chorizo ibérique" },
+      "precios": [{ "precio": 5.2 }],
+      "alergenos": ["gluten", "eggs", "milk", "sulphites"],
+      "dibujo": { "type": "toast", "kind": "baguette", "colors": ["#e0a85e", "#b3302a", "#e8823a"] }
+    },
+    {
+      "id": "bo-salchichon",
+      "seccion": "bocadillos",
+      "grupo": { "es": "Bocadillos", "en": "Rolls", "fr": "Bocadillos" },
+      "nombre": { "es": "Salchichón ibérico", "en": "Iberian salchichón", "fr": "Saucisson ibérique" },
+      "precios": [{ "precio": 5.2 }],
+      "alergenos": ["gluten", "eggs", "milk", "sulphites"],
+      "dibujo": { "type": "toast", "kind": "baguette", "colors": ["#e0a85e", "#8a2a3a", "#f3dccf"] }
+    },
+    {
+      "id": "bo-jamon",
+      "seccion": "bocadillos",
+      "grupo": { "es": "Bocadillos", "en": "Rolls", "fr": "Bocadillos" },
+      "nombre": { "es": "Jamón ibérico", "en": "Iberian ham", "fr": "Jambon ibérique" },
+      "precios": [{ "precio": 5.5 }],
+      "alergenos": ["gluten", "eggs", "milk", "sulphites"],
+      "dibujo": { "type": "toast", "kind": "baguette", "colors": ["#e0a85e", "#a8323a", "#f3dccf"] }
+    },
+    {
+      "id": "bo-queso",
+      "seccion": "bocadillos",
+      "grupo": { "es": "Bocadillos", "en": "Rolls", "fr": "Bocadillos" },
+      "nombre": { "es": "Queso viejo", "en": "Aged cheese", "fr": "Fromage affiné" },
+      "precios": [{ "precio": 5.2 }],
+      "alergenos": ["gluten", "eggs", "milk", "sulphites"],
+      "dibujo": { "type": "toast", "kind": "baguette", "colors": ["#e0a85e", "#f1d27a", "#e9c895"] }
+    },
+    {
+      "id": "bo-jamon-queso",
+      "seccion": "bocadillos",
+      "grupo": { "es": "Bocadillos", "en": "Rolls", "fr": "Bocadillos" },
+      "nombre": { "es": "Jamón ibérico y queso", "en": "Iberian ham and cheese", "fr": "Jambon ibérique et fromage" },
+      "precios": [{ "precio": 5.5 }],
+      "alergenos": ["gluten", "eggs", "milk", "sulphites"],
+      "dibujo": { "type": "toast", "kind": "baguette", "colors": ["#e0a85e", "#a8323a", "#f1d27a"] }
+    },
+    {
+      "id": "bo-mechada",
+      "seccion": "bocadillos",
+      "grupo": { "es": "Bocadillos", "en": "Rolls", "fr": "Bocadillos" },
+      "nombre": { "es": "Carne mechada", "en": "Carne mechada", "fr": "Carne mechada" },
+      "precios": [{ "precio": 5.2 }],
+      "alergenos": ["gluten", "eggs", "milk", "sulphites"],
+      "dibujo": { "type": "toast", "kind": "baguette", "colors": ["#e0a85e", "#8a4a2a", "#c9763a"] }
+    },
+    {
+      "id": "bo-tortilla",
+      "seccion": "bocadillos",
+      "grupo": { "es": "Bocadillos", "en": "Rolls", "fr": "Bocadillos" },
+      "nombre": { "es": "Tortilla", "en": "Spanish omelette", "fr": "Omelette espagnole" },
+      "precios": [{ "precio": 5.2 }],
+      "alergenos": ["gluten", "eggs", "peanuts", "soy", "milk", "nuts", "celery", "mustard", "sesame", "sulphites", "lupin"],
+      "dibujo": { "type": "toast", "kind": "baguette", "colors": ["#e0a85e", "#f0c75a", "#e4b23f"] }
+    },
+    {
+      "id": "bo-york-queso",
+      "seccion": "bocadillos",
+      "grupo": { "es": "Bocadillos", "en": "Rolls", "fr": "Bocadillos" },
+      "nombre": { "es": "York y queso", "en": "Cooked ham and cheese", "fr": "Jambon blanc et fromage" },
+      "precios": [{ "precio": 5.2 }],
+      "alergenos": ["gluten", "eggs", "peanuts", "soy", "milk", "nuts", "celery", "mustard", "sesame", "sulphites", "lupin"],
+      "dibujo": { "type": "toast", "kind": "baguette", "colors": ["#e0a85e", "#e9a3a3", "#f2c94c"] }
+    }
+  ]
+}

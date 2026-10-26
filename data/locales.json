@@ -1,0 +1,27 @@
+{
+  "locales": [
+    {
+      "id": "kaldis",
+      "nombre": "Kaldi's Coffee Bean",
+      "logo": "img/logo-kaldis.webp",
+      "rotulo": [{ "texto": "KALDI'S", "grosor": 300 }, { "texto": "COFFEE BEAN", "grosor": 400, "espaciado": 0.34 }],
+      "lema": {
+        "es": "café · desayunos · bowls · dulces",
+        "en": "coffee · breakfast · bowls · sweets",
+        "fr": "café · petits-déjeuners · bowls · douceurs"
+      }
+    },
+    {
+      "id": "kfe",
+      "nombre": "+KFE",
+      "logo": "img/logo-kfe.webp",
+      "rotulo": [{ "texto": "+KFE", "grosor": 700 }],
+      "lema": {
+        "es": "heladería · tapas · chocolatería · churrería",
+        "en": "ice cream · tapas · hot chocolate · churros",
+        "fr": "glacier · tapas · chocolaterie · churros"
+      }
+    }
+  ],
+  "info": { "horario": null, "direccion": null, "telefono": null, "wifi": null, "nota": null }
+}
