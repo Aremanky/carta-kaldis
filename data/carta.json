@@ -502,13 +502,45 @@
       "grupo": { "es": "Tostadas", "en": "Toast", "fr": "Tartines" },
       "nombre": { "es": "Tostada simple", "en": "Simple toast", "fr": "Tartine simple" },
       "descripcion": {
-        "es": "Mantequilla, aceite, tomate, mermelada, sobrasada, pringá o paté.",
-        "en": "Butter, olive oil, tomato, jam, sobrasada, pringá (stew meats) or pâté.",
-        "fr": "Beurre, huile d’olive, tomate, confiture, sobrasada, pringá (viandes mijotées) ou pâté."
+        "es": "Mantequilla, aceite, tomate, mermelada, sobrasada o paté.",
+        "en": "Butter, olive oil, tomato, jam, sobrasada or pâté.",
+        "fr": "Beurre, huile d’olive, tomate, confiture, sobrasada ou pâté."
       },
       "precios": [
         { "precio": 1.3, "etiqueta": { "es": "Media", "en": "Half", "fr": "Demie" } },
         { "precio": 1.7, "etiqueta": { "es": "Entera", "en": "Whole", "fr": "Entière" } }
+      ],
+      "alergenos": [
+        "gluten",
+        "crustaceans",
+        "eggs",
+        "fish",
+        "peanuts",
+        "soy",
+        "milk",
+        "nuts",
+        "celery",
+        "mustard",
+        "sesame",
+        "sulphites",
+        "lupin",
+        "molluscs"
+      ],
+      "dibujo": { "type": "toast", "kind": "top", "top": ["tomato"] }
+    },
+    {
+      "id": "t-paté",
+      "seccion": "desayunos",
+      "grupo": { "es": "Tostadas", "en": "Toast", "fr": "Tartines" },
+      "nombre": { "es": "Tostada simple", "en": "Simple toast", "fr": "Tartine simple" },
+      "descripcion": {
+        "es": "Con pringá.",
+        "en": "With pringá (stew meats).",
+        "fr": "Avec pringá (viandes mijotées)."
+      },
+      "precios": [
+        { "precio": 1.9, "etiqueta": { "es": "Media", "en": "Half", "fr": "Demie" } },
+        { "precio": 2.3, "etiqueta": { "es": "Entera", "en": "Whole", "fr": "Entière" } }
       ],
       "alergenos": [
         "gluten",
