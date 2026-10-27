@@ -529,10 +529,10 @@
       "dibujo": { "type": "toast", "kind": "top", "top": ["tomato"] }
     },
     {
-      "id": "t-paté",
+      "id": "t-pringá",
       "seccion": "desayunos",
       "grupo": { "es": "Tostadas", "en": "Toast", "fr": "Tartines" },
-      "nombre": { "es": "Tostada simple", "en": "Simple toast", "fr": "Tartine simple" },
+      "nombre": { "es": "Tostada de pringá", "en": "pPringá toast", "fr": "Tartine de pringá" },
       "descripcion": {
         "es": "Con pringá.",
         "en": "With pringá (stew meats).",
