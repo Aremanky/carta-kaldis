@@ -1346,7 +1346,7 @@
       "seccion": "refrescos",
       "nombre": { "es": "Zumo de naranja natural", "en": "Fresh orange juice", "fr": "Jus d’orange pressé" },
       "precios": [
-        { "precio": 2, "etiqueta": { "es": "Normal", "en": "Regular", "fr": "Normal" } },
+        { "precio": 2.2, "etiqueta": { "es": "Normal", "en": "Regular", "fr": "Normal" } },
         { "precio": 3, "etiqueta": { "es": "Grande", "en": "Large", "fr": "Grand" } }
       ],
       "alergenos": null,
@@ -2273,7 +2273,7 @@
       "id": "m-pollo-jamon",
       "seccion": "montaditos",
       "nombre": { "es": "Pollo con jamón", "en": "Chicken with ham", "fr": "Poulet et jambon" },
-      "precios": [{ "precio": 3.8 }],
+      "precios": [{ "precio": 4 }],
       "alergenos": [
         "gluten",
         "crustaceans",
@@ -2347,7 +2347,7 @@
         "en": "Aged cheese with Iberian ham",
         "fr": "Fromage affiné et jambon ibérique"
       },
-      "precios": [{ "precio": 3.8 }],
+      "precios": [{ "precio": 4 }],
       "alergenos": ["gluten", "eggs", "milk", "sulphites"],
       "dibujo": { "type": "toast", "kind": "mini", "colors": ["#e2b06a", "#f1d27a", "#a8323a"] }
     },
@@ -2387,7 +2387,7 @@
       "id": "m-lomo-jamon",
       "seccion": "montaditos",
       "nombre": { "es": "Lomo con jamón", "en": "Pork loin with ham", "fr": "Filet de porc et jambon" },
-      "precios": [{ "precio": 3.8 }],
+      "precios": [{ "precio": 4 }],
       "alergenos": ["gluten", "eggs", "milk", "sulphites"],
       "dibujo": { "type": "toast", "kind": "mini", "colors": ["#e2b06a", "#c99a72", "#a8323a"] }
     },
