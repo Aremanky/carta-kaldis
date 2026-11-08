@@ -360,7 +360,6 @@
               "Té negro vainilla",
               "Té rojo cuerpo del deseo",
               "Té rooibos de albahaca",
-              "Té rooibos vainilla",
               "Té verde con cerezas",
               "Té verde jazmín",
               "Té verde jengibre y limón"
@@ -385,7 +384,6 @@
               "Vanilla black tea",
               "“Cuerpo del deseo” red tea",
               "Basil rooibos",
-              "Vanilla rooibos",
               "Green tea with cherries",
               "Jasmine green tea",
               "Ginger & lemon green tea"
@@ -410,7 +408,6 @@
               "Thé noir vanille",
               "Thé rouge « Cuerpo del deseo »",
               "Rooibos au basilic",
-              "Rooibos vanille",
               "Thé vert aux cerises",
               "Thé vert au jasmin",
               "Thé vert gingembre et citron"
@@ -753,7 +750,6 @@
         "fr": "Omelette aux pommes de terre, omelette nature ou œufs brouillés."
       },
       "precios": [
-        { "precio": 2, "etiqueta": { "es": "Media", "en": "Half", "fr": "Demie" } },
         { "precio": 2.8, "etiqueta": { "es": "Entera", "en": "Whole", "fr": "Entière" } }
       ],
       "alergenos": [
