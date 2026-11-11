@@ -634,8 +634,8 @@
         "fr": "Avec beurre, huile d’olive ou tomate."
       },
       "precios": [
-        { "precio": 1.8, "etiqueta": { "es": "Media", "en": "Half", "fr": "Demie" } },
-        { "precio": 2.2, "etiqueta": { "es": "Entera", "en": "Whole", "fr": "Entière" } }
+        { "precio": 1.9, "etiqueta": { "es": "Media", "en": "Half", "fr": "Demie" } },
+        { "precio": 2.3, "etiqueta": { "es": "Entera", "en": "Whole", "fr": "Entière" } }
       ],
       "alergenos": [
         "gluten",
